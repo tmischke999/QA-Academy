@@ -127,11 +127,6 @@ By the end of this training, students should be able to confidently answer:
 - **Use the Checklist**: The checklist provided will help ensure you are ready for Month 2.
 - **Ask Questions**: If you face issues, the Slack group is available for support and questions.
 
-## Preparing for Month 2
-- **Manual Testing Fundamentals**:
-  - Month 2 will focus on creating and executing test cases, understanding test coverage, and writing effective bug reports.
-  - The foundational skills from Month 1 will help you document and organize your work effectively.
-
 ## Key Deliverables for Month 1
 1. **All Tools Installed and Configured**:
    - VS Code, Postman, browser developer tools, NVDA, Axe, Lighthouse, Wave, and Jira.
@@ -139,3 +134,29 @@ By the end of this training, students should be able to confidently answer:
    - **README**: Summary of Month 1.
    - **Assignments and Reflections**: All key documents completed during the month.
    - **Branch Structure and Commit History**.
+
+## Preparing for Month 2
+
+- **Outline of What to Expect in Month 2**:
+  - **Manual Testing Fundamentals**:
+    - Learn how to write **test cases**, focusing on **functional testing**.
+    - Understand the different types of testing techniques, like **boundary testing**, **equivalence partitioning**, and **decision table testing**.
+    - Practice creating and executing **test cases** with real-world scenarios.
+  - **Bug Reporting**:
+    - Learn how to write effective bug reports using **Jira**.
+    - Practice documenting issues in a detailed and structured way, including steps to reproduce, expected vs actual behavior, severity, and priority.
+  - **Exploratory Testing**:
+    - Understand and practice **exploratory testing** techniques.
+    - Learn how to identify gaps in testing by using exploratory methods to discover unexpected behaviors.
+  - **Skills Application**:
+    - Participants will begin applying the tools they set up in Month 1 to **actual testing scenarios**.
+    - Tools like **Jira**, **browser dev tools**, and **Postman** will be incorporated into hands-on testing assignments.
+
+  - **Key Goals for Month 2**:
+    - By the end of Month 2, students should feel comfortable creating **comprehensive test cases** for a given requirement, documenting **bug reports** effectively, and performing **exploratory testing** to assess software quality.
+    - The foundational skills from Month 1 will help students document and organize their work effectively, ensuring they are fully prepared to handle manual testing activities.
+
+  - **Additional Preparation Tips for Month 2**:
+    - **Practice Writing Test Cases**: Consider using real-world scenarios to practice writing functional test cases.
+    - **Familiarize Yourself with Jira**: Revisit Jira tutorials or any provided resources to feel comfortable navigating the tool for bug tracking.
+    - **Explore Additional Resources**: Use supplementary online resources to strengthen understanding of manual testing techniques and best practices.
