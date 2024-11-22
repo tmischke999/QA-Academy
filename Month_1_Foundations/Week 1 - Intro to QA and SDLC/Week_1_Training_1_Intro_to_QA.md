@@ -56,9 +56,20 @@ QA professionals have a wide range of responsibilities, including:
   3. How can effective QA practices benefit users and businesses?
 
 ### Submission Instructions:
-1. Open the provided Google Docs template (link to template).
-2. Answer the questions in your own words and ensure your response is clear and concise.
-3. Submit your completed reflection via Google Docs sharing or upload it to your GitHub repository under the folder `Week_1_Intro_to_QA_SDLC`.
+1. Open the **QA Reflection Template**: [Insert Google Docs Template Link Here].
+2. Click **File > Make a copy** to create your own editable version.
+3. Complete the reflection by answering the guiding questions.
+4. **Submitting Your Work:**
+   - **Option 1 (Preferred):**  
+     - Share your completed Google Doc with the instructor by using the provided email address.  
+     - Alternatively, share the Google Doc link directly in the Slack group for feedback (ensure the sharing permissions allow "Anyone with the link" to view or comment).  
+   - **Option 2 (Optional):**  
+     - Save the Google Doc in your Drive for future use.  
+     - You will learn how to upload it to GitHub in Week 3.
+
+### Notes:
+- If sharing in Slack, copy the Google Doc link (File > Share > Copy link) and post it in the designated Slack channel (e.g., `#qa-academy`) with a message like:  
+  *"Here is my completed QA reflection for Training 1: [Your Name]. Please review!"*
 
 ---
 
