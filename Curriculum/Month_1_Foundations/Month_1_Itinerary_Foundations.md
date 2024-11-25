@@ -1,110 +1,128 @@
-# Month 1 Itinerary: Foundations
+# Week 1: Training 1 - Introduction to QA
 
-## Overview
-This month focuses on building foundational knowledge of Quality Assurance (QA), ensuring all tools are properly installed and configured, and introducing version control using GitHub. Participants will develop an understanding of core QA concepts and establish the tools and workflows needed for the program. By the end of the month, participants will have completed all initial setup tasks, created their own GitHub repositories, and gained hands-on experience with essential QA and accessibility tools.
-
----
-
-## Weekly Breakdown
-
-### Week 1: Introduction to QA and Software Development Life Cycle (SDLC)
-
-#### Training 1: Introduction to QA
-- **Topics Covered:**
-  - Overview of QA in the SDLC.
-  - QA roles and responsibilities in a project.
-  - Understanding quality in software.
-- **Assignment:**
-  - Write a one-page reflection on the importance of QA in software development using a provided Google Docs template.
-
-#### Training 2: Introduction to SDLC and Basic Diagram Creation
-- **Topics Covered:**
-  - Phases of SDLC (Requirements, Development, Testing, Deployment).
-  - QA’s role in each phase.
-  - Using Google Docs/Sheets to create flow diagrams.
-- **Assignment:**
-  - Create an SDLC flow diagram using Google Docs/Sheets. Instructions and examples will be provided.
+## Objective
+Introduce students to the role of Quality Assurance (QA) in software development. By the end of this training, students will understand:
+- How QA fits into the Software Development Life Cycle (SDLC).
+- The roles and responsibilities of a QA professional.
+- The concept of software quality and why it is critical to successful development.
 
 ---
 
-### Week 2: Overview of Testing Types
-
-#### Training 3: Testing Types Overview
-- **Topics Covered:**
-  - What is Manual Testing?
-  - Introduction to Accessibility Testing and WCAG basics.
-  - Overview of API Testing: HTTP methods and endpoints.
-- **Assignment:**
-  - Research and summarize one testing type (Manual, Accessibility, or API Testing) in a short Google Doc.
-
-#### Training 4: Introduction to QA Tools
-- **Topics Covered:**
-  - Overview of QA tools:
-    - Text Editors (e.g., VS Code).
-    - Postman for API testing.
-    - Browser developer tools.
-- **Assignment:**
-  - Download and install tools: VS Code, Postman, and browser developer tools.
-  - Write a brief report on the purpose of each tool.
+## Free Online Resources
+To supplement this training, students are encouraged to explore the following resources before diving into the topics:
+1. [What is QA in Software Development? (Guru99)](https://www.guru99.com/software-testing-introduction.html)  
+   - A beginner-friendly explanation of QA and its importance.
+2. [Software Testing and QA Overview (Test Automation University)](https://testautomationu.applitools.com/software-testing/)  
+   - A free video course on QA fundamentals.
+3. [SDLC Basics (Simplilearn)](https://www.simplilearn.com/tutorials/software-engineering-tutorial/software-development-life-cycle-sdlc)  
+   - An overview of the Software Development Life Cycle (SDLC).
 
 ---
 
-### Week 3: Setting Up Tools and Introduction to Accessibility Testing
+## Topics Covered
 
-#### Training 5: Accessibility Tools Overview
-- **Topics Covered:**
-  - Accessibility testing tools:
-    - NVDA (screen reader).
-    - Axe (browser extension).
-    - Lighthouse (Chrome DevTools).
-    - Wave (visual accessibility evaluator).
-    - Color Contrast Checkers (WebAIM).
-    - Mobile screen readers: TalkBack (Android) and VoiceOver (iOS).
-- **Assignment:**
-  - Install NVDA, Axe, Wave, and Lighthouse.
-  - Use Lighthouse to audit a sample webpage and write a summary of the issues found.
+### 1. Overview of QA in the SDLC
+- QA ensures the quality of software products by identifying and addressing defects early in the SDLC.
+- QA is involved in various SDLC phases:
+  - **Requirements Phase:** Reviewing and clarifying requirements to identify potential ambiguities.
+  - **Development Phase:** Collaborating with developers to prevent defects during implementation.
+  - **Testing Phase:** Verifying that the product meets requirements and is free of defects.
+  - **Deployment Phase:** Ensuring the product works as expected in production.
 
-#### Training 6: Introduction to Bug Tracking and Version Control with GitHub (Part 1)
-- **Topics Covered:**
-  - Introduction to Jira for bug tracking.
-  - Setting up a GitHub account and repository.
-  - Understanding basic Git commands (clone, commit, push, pull).
-- **Assignment:**
-  - Create a GitHub repository and write a README with a short personal introduction and goals for the program.
+**Key Insight:** QA is not just about testing—it's about ensuring quality at every stage of development.
 
 ---
 
-### Week 4: Practicing GitHub and Wrapping Up Tool Setup
-
-#### Training 7: Version Control with GitHub (Part 2)
-- **Topics Covered:**
-  - Creating branches and managing files in GitHub.
-  - Writing effective commit messages.
-- **Assignment:**
-  - Practice Git commands: create a branch, add files, and merge into the main branch.
-
-#### Training 8: Wrapping Up Tool Setup
-- **Topics Covered:**
-  - Verifying all tools are installed and configured.
-  - Troubleshooting common installation issues.
-  - Preparing for Month 2 with a checklist.
-- **Project:**
-  - Submit a GitHub repository with the README, test files, and a branch structure showing commit history.
+### 2. QA Roles and Responsibilities
+QA professionals have a wide range of responsibilities, including:
+- **Requirement Analysis:** Reviewing requirements to ensure they are clear, testable, and complete.
+- **Test Planning:** Defining what needs to be tested, how it will be tested, and the resources needed.
+- **Test Case Creation:** Designing test cases that verify requirements are met.
+- **Execution of Tests:** Running tests to find defects and document results.
+- **Defect Reporting:** Clearly documenting issues and collaborating with developers to resolve them.
+- **Regression Testing:** Verifying that new changes do not negatively impact existing functionality.
+- **Communication:** Reporting quality metrics and test results to stakeholders.
 
 ---
 
-## Key Deliverables for Month 1
-1. **All required tools installed and configured:**
-   - VS Code, Postman, browser developer tools, NVDA, Axe, Lighthouse, Wave, and Jira.
-2. **GitHub repository created with a README.**
-3. **Written assignments and reflections:**
-   - QA reflection.
-   - SDLC flow diagram.
-   - Tool purpose summaries.
-   - Accessibility audit summary.
-4. **A branch structure in GitHub with a commit history.**
+### 3. Understanding Quality in Software
+- **What is Software Quality?**
+  - Software quality means meeting customer expectations by delivering a product that is reliable, functional, secure, and easy to use.
+
+- **Dimensions of Quality:**
+  - **Functional:** Does the product do what it’s supposed to do?
+  - **Performance:** Does the product work quickly and efficiently?
+  - **Usability:** Is the product easy to use?
+  - **Security:** Does the product protect users’ data and privacy?
+
+**Key Insight:** High-quality software reduces costs, improves user satisfaction, and increases business success.
+
+**Glossary of Terms**: Provide a glossary that includes common QA terminology (e.g., defect, regression, requirements). This glossary can be accessed throughout the course for easy reference.
 
 ---
 
-## Looking Ahead
-In Month 2, participants will dive into manual testing fundamentals, focusing on creating and executing test cases, writing effective bug reports, and developing exploratory testing skills.
+## Assignment
+### Task: Reflect on QA’s Importance
+- Write a one-page reflection on the importance of QA in software development. Use the following guiding questions:
+  1. What role does QA play in ensuring software quality?
+  2. Why is QA important in the Software Development Life Cycle?
+  3. How can effective QA practices benefit users and businesses?
+
+### QA Reflection Template Outline
+Students can use the following outline for their reflection:
+
+#### **QA Reflection Outline**
+
+1. **Introduction**  
+   - Briefly introduce what Quality Assurance (QA) is in software development.
+
+2. **QA's Role in Ensuring Software Quality**  
+   - Discuss the role QA plays in maintaining and ensuring the quality of software products.
+   - Provide examples of how QA can identify and prevent defects early in the process.
+
+3. **Importance of QA in the SDLC**  
+   - Explain why QA is crucial during each phase of the Software Development Life Cycle (SDLC).
+   - Mention specific phases such as Requirements, Development, Testing, and Deployment.
+
+4. **Benefits of Effective QA Practices**  
+   - Describe how effective QA practices benefit end users and businesses.
+   - Include points related to user satisfaction, reduced costs, and product reliability.
+
+5. **Conclusion**  
+   - Summarize why QA is an essential part of software development and how it contributes to overall project success.
+
+### Submission Instructions:
+1. Complete the reflection using the outline provided above.
+2. **Submitting Your Work:**
+   - **Option 1 (Preferred):**  
+     - Share your completed Google Doc with the instructor by using the provided email address.  
+     - Alternatively, share the Google Doc link directly in the Slack group for feedback (ensure the sharing permissions allow "Anyone with the link" to view or comment).  
+   - **Option 2 (Optional):**  
+     - Save the Google Doc in your Drive for future use.  
+     - You will learn how to upload it to GitHub in Week 3.
+
+### Notes:
+- If sharing in Slack, copy the Google Doc link (File > Share > Copy link) and post it in the designated Slack channel (e.g., `#qa-academy`) with a message like:  
+  *"Here is my completed QA reflection for Training 1: [Your Name]. Please review!"*
+
+---
+
+## Key Interview Questions
+At the end of this training, students should be able to confidently answer the following questions in an interview:
+1. What is QA, and how does it fit into the SDLC?
+2. What are the key roles and responsibilities of a QA professional?
+3. What are the dimensions of software quality, and why are they important?
+4. How does QA help mitigate risks during the Requirements Phase?
+
+---
+
+## Tips for Success
+- Take notes during the session, especially on how QA integrates into the SDLC.
+- Review the free online resources for additional context and examples.
+- Ensure your reflection assignment is thoughtful and demonstrates understanding of the concepts discussed.
+- Keep a **log of interview questions** you encounter during this course to help you prepare for interviews.
+
+---
+
+### Next Training
+In **Training 2**, we will explore the phases of the SDLC in greater detail and learn how QA contributes to each phase. Be prepared to apply your knowledge of QA in this context!
