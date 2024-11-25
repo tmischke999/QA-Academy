@@ -181,6 +181,17 @@ Include the following:
 
 ---
 
+## Key Interview Questions
+
+By the end of this training, students should be able to answer:
+1. What is the purpose of accessibility testing?
+2. How do tools like NVDA, Axe, and Lighthouse assist in identifying accessibility issues?
+3. What are WCAG guidelines, and why are they important in accessibility testing?
+4. How do you perform keyboard navigation testing and why is it important?
+5. What is reflow testing, and what does it verify?
+
+---
+
 ## Tips for Success
 
 - Take notes on how each tool works during the session, including setup steps.
