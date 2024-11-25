@@ -5,6 +5,7 @@ Introduce students to the role of Quality Assurance (QA) in software development
 - How QA fits into the Software Development Life Cycle (SDLC).
 - The roles and responsibilities of a QA professional.
 - The concept of software quality and why it is critical to successful development.
+- Potential career paths in QA.
 
 ---
 
@@ -13,9 +14,11 @@ To supplement this training, students are encouraged to explore the following re
 1. [What is QA in Software Development? (Guru99)](https://www.guru99.com/software-testing-introduction.html)  
    - A beginner-friendly explanation of QA and its importance.
 2. [Software Testing Tutorial (Guru99)](https://www.guru99.com/software-testing.html)  
-   - A free video course on QA fundamentals.
+   - A comprehensive tutorial covering QA fundamentals.
 3. [SDLC Overview (Guru99)](https://www.guru99.com/software-development-life-cycle-tutorial.html)  
    - An overview of the Software Development Life Cycle (SDLC).
+4. [How To Become a Software Tester (Career Path) (Guru99)](https://www.guru99.com/software-testing-career-complete-guide.html)  
+   - A comprehensive guide for those interested in pursuing a career in software testing.
 
 ---
 
@@ -43,6 +46,11 @@ QA professionals have a wide range of responsibilities, including:
 - **Regression Testing:** Verifying that new changes do not negatively impact existing functionality.
 - **Communication:** Reporting quality metrics and test results to stakeholders.
 
+**Career Path in QA:**
+- QA roles can vary from entry-level testers to senior QA engineers, automation specialists, or even QA managers.
+- Skills needed for career advancement include a deep understanding of QA fundamentals, proficiency with tools, and effective communication.
+- Refer to [How To Become a Software Tester (Career Path) (Guru99)](https://www.guru99.com/software-testing-career-complete-guide.html) for more details.
+
 ---
 
 ### 3. Understanding Quality in Software
@@ -67,6 +75,7 @@ QA professionals have a wide range of responsibilities, including:
   1. What role does QA play in ensuring software quality?
   2. Why is QA important in the Software Development Life Cycle?
   3. How can effective QA practices benefit users and businesses?
+  4. What role would you like to see yourself in within QA in the future, and what skills do you think you need to get there?
 
 ### QA Reflection Template Outline
 Students can use the following outline for their reflection:
@@ -88,7 +97,11 @@ Students can use the following outline for their reflection:
    - Describe how effective QA practices benefit end users and businesses.
    - Include points related to user satisfaction, reduced costs, and product reliability.
 
-5. **Conclusion**  
+5. **Career Path in QA**  
+   - Describe the role you aspire to within QA and the skills needed to reach it.
+   - Reflect on your goals and how you can use the skills gained in this course to achieve them.
+
+6. **Conclusion**  
    - Summarize why QA is an essential part of software development and how it contributes to overall project success.
 
 ### Submission Instructions:
@@ -113,6 +126,7 @@ At the end of this training, students should be able to confidently answer the f
 2. What are the key roles and responsibilities of a QA professional?
 3. What are the dimensions of software quality, and why are they important?
 4. How does QA help mitigate risks during the Requirements Phase?
+5. What is the typical career progression for a QA professional?
 
 ---
 
