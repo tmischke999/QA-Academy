@@ -1,142 +1,179 @@
-# Week 4: Training 7 - Version Control with GitHub (Part 2)
+# Week 3: Training 6 - Introduction to Bug Tracking and Version Control with GitHub (Part 1)
 
 ## Objective
-By the end of this training, students will:
-- Learn how to create and manage branches in GitHub.
-- Understand the importance of writing effective commit messages.
-- Practice creating branches, adding files, and merging changes into the main branch.
+Introduce students to bug tracking with Jira and foundational version control concepts using Git and GitHub. By the end of this training, students will:
+- Understand how bug tracking tools like Jira are used in QA workflows.
+- Learn the basics of Git and GitHub for version control.
+- Download and install Git, configure Git for use with GitHub, clone the QA Academy repository, add saved documents from Google Drive, and set up their personal GitHub repository.
+
+---
+
+## Free Online Resources
+- [Difference Between Severity and Priority in Testing]()
+- [Introduction to Bug Tracking with Jira](https://www.atlassian.com/software/jira/guides)
+- [How to use Jira](https://www.youtube.com/watch?v=qi5zLHdOytI)
+- [How to work with Bugs in Jira](https://www.youtube.com/watch?v=X-UeAjryCAw)
+- [Git Basics](https://git-scm.com/doc)
+- [Getting Started with GitHub](https://docs.github.com/en/get-started)
+
+---
 
 ## Topics Covered
 
-### 1. Creating Branches in GitHub
-- What is a branch?
-- Why are branches important in version control?
-- Practical steps to create a new branch.
+### 1. Key Features in QA
 
-### 2. Managing Files in GitHub
-- How to add files to a branch.
-- Making changes and committing them to the branch.
-- Understanding when to merge changes back into the main branch.
+- **Creating and Managing Bug Reports**:
+  - **Summary**: A concise title summarizing the problem.
+  - **Description**: A detailed explanation of the issue.
+  - **Steps to Reproduce**: Step-by-step instructions to recreate the issue.
+  - **Expected Behavior**: How the application should behave.
+  - **Actual Behavior**: How the application behaves incorrectly.
+  - **Error Details**: Include errors observed (e.g., console errors, API errors).
+  - **Accessibility Issues**: Note violations like missing labels or poor contrast.
 
-### 3. Writing Effective Commit Messages
-- What makes a good commit message?
-- Guidelines for writing meaningful commit messages.
+- **Tracking Defect Statuses**:
+  - Open → In Progress → Resolved → Closed.
 
-## Learning Resources
+- **Prioritizing Bugs**:
+  - **Severity**: Critical, High, Medium, Low.
+  - **Labels**: UI Bug, Accessibility, API Error.
+  - **Sprints**: Assign tasks to specific cycles.
 
-### Free Online Tutorials to Get Started
-1. **GitHub Learning Lab: Introduction to GitHub**
-   - Link: [GitHub Learning Lab - Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
-   - Description: This interactive lab walks you through branching, creating files, and merging changes.
+### 2. Introduction to Jira for Bug Tracking
+Jira is a widely used tool for reporting, prioritizing, and tracking bugs in collaborative environments.
 
-2. **Atlassian Git Tutorial - Branching**
-   - Link: [Atlassian Git Tutorial - Branching](https://www.atlassian.com/git/tutorials/using-branches)
-   - Description: This tutorial explains branching in detail and covers the basics of Git commands for managing branches.
+**Setup Instructions**:
 
-3. **FreeCodeCamp Git & GitHub**
-   - Link: [FreeCodeCamp Git Tutorial](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
-   - Description: This beginner-friendly guide covers branching, merging, and best practices for effective version control.
+- **Sign Up for Jira**:
+  - Go to [Jira Free](https://www.atlassian.com/software/jira/try) and create an account.
+- **Create a New Project**:
+  - Click **Create Project** and select a project type (e.g., Kanban or Scrum).
+  - Name the project (e.g., "QA Academy Bug Tracking").
+
+### 3. Setting Up Git and GitHub
+
+#### **3.1 Download and Install Git**
+- **Overview**: Git is a version control system used to manage and track changes in source code during software development.
+- **Installation Steps**:
+  - **Mac**: Git is often pre-installed. You can check if it’s installed by running:
+    ```bash
+    git --version
+    ```
+    If not installed, use Homebrew to install Git:
+    ```bash
+    brew install git
+    ```
+    Or download it directly from the [Git website](https://git-scm.com/downloads).
+  - **Windows**: Download the installer from the [Git website](https://git-scm.com/downloads) and follow the setup wizard instructions.
+
+#### **3.2 Set Up Git and Configure with GitHub**
+- **Configure Git** with your personal details:
+  - In **Terminal** (Mac) or **Command Prompt** (Windows), run:
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+    ```
+- **Create a GitHub Account** if not done already:
+  - Go to [GitHub.com](https://github.com) and **sign up** for a free account.
+- **Create a Repository** in GitHub:
+  - Click **New** in your GitHub dashboard.
+  - **Name** the repository (e.g., "QA-Academy-Portfolio").
+  - Add a description (optional) and **initialize with a README**.
+  - **Clone the Repository** to your local machine:
+    - In GitHub, click on the **<> Code** button and copy the SSH or HTTPS link.
+    - In **Terminal** (Mac) or **Command Prompt** (Windows), run:
+      ```bash
+      git clone <repository-link>
+      ```
+      Replace `<repository-link>` with the link copied from GitHub.
+
+---
 
 ## Practical Assignment
 
-### Part 1: Complete the GitHub Learning Lab Module
-1. **Start with the GitHub Learning Lab module**:
-   - Navigate to the [GitHub Learning Lab - Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github).
-   - Complete the module on branching, following the steps to create and manage branches.
-   - This module will walk you through the entire process interactively.
+### Part 1: Log a Mock Bug in Jira
 
-### Part 2: Practice Branching, Adding Files, and Merging
-After completing the GitHub Learning Lab module, follow these steps to practice in your **QA Academy repository**:
+1. Navigate to your Jira project.
+2. **Log a Mock Bug**:
+   - Click **Create Issue** and choose **Bug** as the issue type.
+   - Fill in the **Summary**, **Description**, **Steps to Reproduce**, **Expected Behavior**, and **Actual Behavior** fields.
+   - Assign a severity level.
+   - Save the bug report.
 
-1. **Create a New Branch**
-   - Open a terminal or command prompt.
-   - Navigate to your local QA Academy repository.
-     ```bash
-     cd QA-Academy
-     ```
-   - Create a new branch for your practice:
-     ```bash
-     git checkout -b feature/practice-branch
-     ```
-     - **Note**: The name `feature/practice-branch` is an example. You can use any meaningful branch name, like `training-week4`.
+### Part 2: Set Up Git and GitHub
 
-2. **Add a New File to the Branch**
-   - Create a new file in the repository. For example, create a simple text file named `branch_practice.txt`.
-     ```bash
-     echo "This is my practice file for branching." > branch_practice.txt
-     ```
-   - Stage the file for commit:
-     ```bash
-     git add branch_practice.txt
-     ```
-   - Commit the new file with a descriptive message:
-     ```bash
-     git commit -m "Add practice file for branching exercise"
-     ```
+1. **Install Git** following the steps in Section 3.1.
+2. **Configure Git** by adding your name and email (Section 3.2).
+3. **Create a GitHub Repository** named `QA-Academy-Portfolio`.
+4. **Clone the Repository** to your local machine using the command:
+   ```bash
+   git clone <repository-link>
+   ```
+5. Verify the repository is cloned successfully.
 
-3. **Merge the Branch Back into Main**
-   - Switch back to the `main` branch:
-     ```bash
-     git checkout main
-     ```
-   - Merge your `feature/practice-branch` into the `main` branch:
-     ```bash
-     git merge feature/practice-branch
-     ```
-   - Push your changes to GitHub:
-     ```bash
-     git push origin main
-     ```
+### Part 3: Add Saved Documents from Google Drive to Your QA Academy Repo
 
-4. **Delete the Branch (Optional)**
-   - Once your changes are merged, you can delete the branch locally:
+1. **Locate Your Documents**:
+   - Download your previous assignments from Google Drive.
+   - Save them locally.
+2. **Move Files into the QA Academy Repo**:
+   - Use the terminal to navigate to the cloned repository:
      ```bash
-     git branch -d feature/practice-branch
+     cd QA-Academy-Portfolio
      ```
-   - And remotely (on GitHub):
+   - **Copy files** into the appropriate folder.
+
+### Part 4: Add Documents to GitHub
+
+1. Add and commit changes to the repository:
+   - **Stage all files**:
      ```bash
-     git push origin --delete feature/practice-branch
+     git add .
      ```
+   - **Commit the changes** with a message:
+     ```bash
+     git commit -m "Initial commit: Added saved documents"
+     ```
+2. **Push** changes to GitHub:
+   ```bash
+   git push origin main
+   ```
 
-### Part 3: Write a Commit Message Guideline
-Write a short document titled **"Commit Message Guidelines"**. This should include:
-- **Why good commit messages matter**.
-- **Examples** of good commit messages (e.g., "Add tests for new login feature").
-- **Guidelines** for writing commit messages, such as:
-  - Start with a verb (e.g., "Add," "Fix," "Update").
-  - Keep it concise but informative.
-  - Reference an issue or ticket if applicable.
+### Part 5: Write a Personal README
 
-Save this document in your local repository and commit it with a message like:
-```bash
-git add commit_guidelines.txt
-git commit -m "Add commit message guideline document"
-git push origin main
-```
+Include:
+- A personal introduction (e.g., "I’m learning QA through QA Academy.").
+- Program goals (e.g., "To build skills in QA and contribute to high-quality software.").
+
+---
 
 ## Submission Instructions
+
 1. **Share Your GitHub Repository Link**:
    - Share the link to your updated repository in the Slack group for feedback.
-   - Make sure your new file (`branch_practice.txt`) and commit message guidelines (`commit_guidelines.txt`) are present.
+   - Ensure your files are properly added and committed.
 
 2. **Save Your Progress**:
-   - Ensure all your changes are pushed to your personal GitHub repository.
-   - Save the link to your repository as you'll use it in future exercises.
+   - Verify all changes are pushed to your GitHub repository.
 
-## Free Online Resources for Further Learning
-- [Pro Git Book - Chapter on Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [GitHub Guide on Writing Commit Messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages)
+---
 
 ## Key Interview Questions
-By the end of this training, students should be able to answer:
-1. What is a Git branch, and why is it useful?
-2. How do you create and merge a branch in Git?
-3. What makes a good commit message?
+
+1. What is Jira, and how is it used in QA workflows?
+2. When logging a bug in Jira, what details should you include to make it clear for others to understand?
+3. What are some of the basic Git commands you've learned, and what do they do?
+4. What does 'commit' mean in Git, and how is it different from 'push'?
+5. What is the purpose of using GitHub along with Git?
+6. What makes a good commit message? Can you give an example?
 
 ## Tips for Success
-- **Practice Branching**: Don’t hesitate to create multiple branches for practice. The more comfortable you are with branches, the easier collaboration becomes.
-- **Write Detailed Commit Messages**: Use the guidelines you’ve written to make your commit messages more effective.
-- **Ask Questions in Slack**: If you face issues, share them in Slack. Learning from challenges is part of the process.
+
+- **Practice Using Git**: Get comfortable with basic Git commands like `clone`, `add`, `commit`, and `push`.
+- **Document Each Step**: Take screenshots as you work through each step; this can serve as a reference.
+- **Ask for Help**: If you encounter any issues, ask questions in Slack—troubleshooting is an important skill.
+
+---
 
 ## Next Training
-In **Training 8**, we will wrap up tool setup and ensure everyone is comfortable with the tools we've introduced. We will troubleshoot common issues, and prepare for Month 2, which dives deeper into manual testing fundamentals.
+In **Training 7**, we will focus on **branching** and **merging** in Git, along with using **VS Code** for version control. We will also learn how to write effective commit messages.
