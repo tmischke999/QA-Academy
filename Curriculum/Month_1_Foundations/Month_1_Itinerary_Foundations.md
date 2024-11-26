@@ -14,6 +14,7 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
   - Overview of QA in the SDLC.
   - QA roles and responsibilities in a project.
   - Understanding quality in software.
+  - Potential career paths in QA.
 - **Assignment:**
   - Write a one-page reflection on the importance of QA in software development using a provided Google Docs template.
 
@@ -27,7 +28,7 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
 
 ---
 
-### Week 2: Overview of Testing Types
+### Week 2: Overview of Testing Types and QA Tools
 
 #### Training 3: Testing Types Overview
 - **Topics Covered:**
@@ -43,13 +44,13 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
     - Text Editors (e.g., VS Code).
     - Postman for API testing.
     - Browser developer tools.
+    - Accessibility testing tools (NVDA, Axe, Wave, Lighthouse).
 - **Assignment:**
-  - Download and install tools: VS Code, Postman, and browser developer tools.
-  - Write a brief report on the purpose of each tool.
+  - Write a brief report on the purpose of each tool. Installation and configuration will be covered later.
 
 ---
 
-### Week 3: Setting Up Tools and Introduction to Accessibility Testing
+### Week 3: Setting Up Tools and Accessibility Testing
 
 #### Training 5: Accessibility Tools Overview
 - **Topics Covered:**
@@ -60,6 +61,7 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
     - Wave (visual accessibility evaluator).
     - Color Contrast Checkers (WebAIM).
     - Mobile screen readers: TalkBack (Android) and VoiceOver (iOS).
+  - Keyboard navigation testing and reflow testing.
 - **Assignment:**
   - Install NVDA, Axe, Wave, and Lighthouse.
   - Use Lighthouse to audit a sample webpage and write a summary of the issues found.
@@ -69,8 +71,10 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
   - Introduction to Jira for bug tracking.
   - Setting up a GitHub account and repository.
   - Understanding basic Git commands (clone, commit, push, pull).
+  - Creating and managing bug reports in Jira.
 - **Assignment:**
   - Create a GitHub repository and write a README with a short personal introduction and goals for the program.
+  - Log a mock bug in Jira.
 
 ---
 
@@ -80,8 +84,9 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
 - **Topics Covered:**
   - Creating branches and managing files in GitHub.
   - Writing effective commit messages.
+  - Merging branches and managing conflicts.
 - **Assignment:**
-  - Practice Git commands: create a branch, add files, and merge into the main branch.
+  - Practice Git commands: create a branch, add files, merge into the main branch, and resolve any conflicts.
 
 #### Training 8: Wrapping Up Tool Setup
 - **Topics Covered:**
@@ -89,22 +94,26 @@ This month focuses on building foundational knowledge of Quality Assurance (QA),
   - Troubleshooting common installation issues.
   - Preparing for Month 2 with a checklist.
 - **Project:**
-  - Submit a GitHub repository with the README, test files, and a branch structure showing commit history.
+  - Submit a GitHub repository with the README, test files, a branch structure showing commit history, and an accessibility audit report.
+  - Export Postman workspace and environment settings.
+  - Write a reflection document summarizing key takeaways from Month 1.
 
 ---
 
 ## Key Deliverables for Month 1
 1. **All required tools installed and configured:**
-   - VS Code, Postman, browser developer tools, NVDA, Axe, Lighthouse, Wave, and Jira.
-2. **GitHub repository created with a README.**
+   - VS Code, Postman, browser developer tools, NVDA, Axe, Lighthouse, Wave, Color Contrast Checker, and Jira.
+2. **GitHub repository created with a README and complete project structure.**
 3. **Written assignments and reflections:**
    - QA reflection.
    - SDLC flow diagram.
    - Tool purpose summaries.
    - Accessibility audit summary.
-4. **A branch structure in GitHub with a commit history.**
+   - Reflection document summarizing key takeaways from Month 1.
+4. **A branch structure in GitHub with a commit history demonstrating feature work.**
+5. **Postman workspace and environment settings exported.**
 
 ---
 
 ## Looking Ahead
-In Month 2, participants will dive into manual testing fundamentals, focusing on creating and executing test cases, writing effective bug reports, and developing exploratory testing skills.
+In Month 2, participants will dive into manual testing fundamentals, focusing on creating and executing test cases, writing effective bug reports using Jira, and developing exploratory testing skills. Additionally, they will apply the tools set up in Month 1 to hands-on testing assignments, including using Postman for API testing and accessibility tools for comprehensive audits.
