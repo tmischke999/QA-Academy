@@ -28,7 +28,7 @@
 
 ---
 
-## Week 2: Test Planning, Execution, and Regression Testing
+## Week 2: Test Planning, Execution, and Exploratory Testing
 
 ### Training 3: Test Planning and Execution Fundamentals
 **Objective:** Introduce students to test planning, emphasizing the importance of preparation and effective execution.
@@ -42,21 +42,7 @@
 
 ---
 
-### Training 4: Introduction to Regression Testing and Automation Candidates
-**Objective:** Explain the purpose of regression testing and introduce identifying automation candidates among test cases.
-
-**Topics Covered:**
-- Identifying Regression Test Cases.
-- Automation Feasibility and High-Value Test Case Candidates.
-
-**Assignment:**
-- Review and update test cases to mark those suitable for regression and automation.
-
----
-
-## Week 3: Exploratory Testing and Bug Reporting
-
-### Training 5: Exploratory Testing Techniques
+### Training 4: Exploratory Testing Techniques
 **Objective:** Introduce exploratory testing and how to effectively explore a system beyond scripted test cases.
 
 **Topics Covered:**
@@ -65,6 +51,20 @@
 
 **Assignment:**
 - Conduct an exploratory session on the registration form and document findings.
+
+---
+
+## Week 3: Regression, Automation Testing and Bug Reporting
+
+### Training 5: Introduction to Regression Testing and Automation Candidates
+**Objective:** Explain the purpose of regression testing and introduce identifying automation candidates among test cases.
+
+**Topics Covered:**
+- Identifying Regression Test Cases.
+- Automation Feasibility and High-Value Test Case Candidates.
+
+**Assignment:**
+- Review and update test cases to mark those suitable for regression and automation.
 
 ---
 
