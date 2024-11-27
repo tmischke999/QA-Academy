@@ -83,7 +83,7 @@
 ## Week 4: Documentation Best Practices and Wrap-Up
 
 ### Training 7: Organizing QA Documentation
-**Objective:** Guide students on maintaining organized QA documentation using accessible tools, while summarizing key deliverables.
+**Objective:** Guide students on maintaining well-structured QA records and documentation, while summarizing key deliverables.
 
 **Topics Covered:**
 - Structuring Google Sheets and Docs for Effective QA Documentation.
