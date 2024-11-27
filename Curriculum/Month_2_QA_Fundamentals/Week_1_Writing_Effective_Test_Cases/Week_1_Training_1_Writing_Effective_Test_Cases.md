@@ -61,6 +61,11 @@ To supplement this training, students are encouraged to explore the following re
   - Store all assignments, resources, and reflections in their respective monthly folders.
 
 ### **Part 2: Create Test Cases for Registering a User on OpenCart**
+### **Accessing the OpenCart Demo Site**
+- Students will use the following **OpenCart demo site** to practice writing test cases:
+  - **OpenCart Demo Site**: [https://demo.opencart.com/](https://demo.opencart.com/)
+  - Focus for this session will be on the **registration feature**.
+
 - **Objective**: Students will create a set of initial test cases for the **registration feature** on the OpenCart demo site using Google Sheets.
 - **Template**: Students can use the Test Case Template provided [here](https://www.smartsheet.com/test-case-templates-examples?srsltid=AfmBOopXJ5Z8wUCQaGSa3ovipcgVeOI0HNG2-7L3EIs2TDGlpp0wTY5M#manual-testing-test-case-template) and copy it into their Google Sheets to maintain a structured format. Update the template to include the following: 
   - **Test Case ID**: Unique identifier for the test case.
@@ -72,11 +77,6 @@ To supplement this training, students are encouraged to explore the following re
 - **Scenarios to Cover**:
   - Positive Scenarios: Successful registration with valid inputs.
   - Negative Scenarios: Missing fields, invalid email formats, mismatched passwords, etc.
-
-### **Accessing the OpenCart Demo Site**
-- Students will use the following **OpenCart demo site** to practice writing test cases:
-  - **OpenCart Demo Site**: [https://demo.opencart.com/](https://demo.opencart.com/)
-  - Focus for this session will be on the **registration feature**.
 
 **Note**: In future sessions, we will continue to expand on these test cases by adding more features of the OpenCart demo, such as **login**, **checkout**, and others, to build a comprehensive understanding of test case development.
 
