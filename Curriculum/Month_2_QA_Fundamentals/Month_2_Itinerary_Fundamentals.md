@@ -82,35 +82,56 @@
 
 ## Week 4: Documentation Best Practices and Wrap-Up
 
-### Training 7: Organizing QA Documentation
-**Objective:** Guide students on maintaining well-structured QA records and documentation, while summarizing key deliverables.
+### Training 7: Creating an Effective Handoff Document
+**Objective**: Train students on how to create a detailed and well-structured handoff document to facilitate clear communication with developers and stakeholders.
 
-**Topics Covered:**
-- Structuring Google Sheets and Docs for Effective QA Documentation.
-- Writing Summaries for GitHub (README).
+**Topics Covered**:
+- Components of a Good Handoff Document:
+  - Summary of Issues.
+  - Recommendations and Next Steps.
+  - Test Coverage Summary.
+  - Personalized Communication Techniques.
+- Guidance on **Communicating Testing Insights** for Effective Developer Collaboration.
+- How to use **templates** and **structured outlines** to create a consistent format.
 
-**Assignment:**
-- Create a Google Doc summary of all Month 2 activities and update GitHub with a README summarizing work.
+**Assignment**:
+- Draft a **handoff document** summarizing your Month 2 test findings:
+  - Include a **Top 3 Bugs List** with severity, priority, and a brief impact summary.
+  - Summarize **test coverage**, highlighting key areas tested and any gaps found.
+  - Provide **clear next steps** or recommendations for the development team.
 
----
-
-### Training 8: Manual Testing Wrap-Up
-**Objective:** Consolidate learning from Month 2 and reflect on the journey while preparing for Month 3.
-
-**Topics Covered:**
-- Review Checklist of Deliverables.
-- Introduction to Accessibility Testing for Month 3.
-
-**Assignment:**
-- Write a reflection on the evolution of testing skills throughout Month 2.
+**Additional Resource**: Include a **template outline** for the handoff document to help guide students through the expected structure.
 
 ---
 
-### Key Topics Covered in Month 2
+### Training 8: Writing a Test Summary Report and Month Wrap-Up
+**Objective**: Consolidate learning from Month 2 by practicing summarizing testing activities in a professional report format while reflecting on progress.
+
+**Topics Covered**:
+- **Creating a Test Summary Report**:
+  - Scope of Evaluation.
+  - Methodology Summary.
+  - Overview of Findings and Recommendations.
+  - Structuring Information for Broader Stakeholder Communication.
+- **Reflections and Analysis**: 
+  - How to identify areas of improvement in previous test cases.
+  - Guided reflection questions to improve communication and testing skills.
+
+**Assignment**:
+- Create a **test summary report** for the Month 2 activities:
+  - Include **scope**, **methodology**, **key findings**, and **recommendations**.
+  - Revisit a previously written test case or bug report and **refine it** based on what you’ve learned.
+- **Extra Credit**: Create a **glossary** of key terms used in QA documentation to help with understanding key terminology (e.g., severity, priority, ramp date, reflow).
+
+---
+
+### Key Topics Covered in Month 2 (Updated)
 - Writing Test Cases: Structure and Best Practices.
 - Enhancing Test Coverage: EP and BVA.
 - Test Planning and Regression Testing: Execution and Prioritization.
 - Identifying Automation Candidates: Determining Test Suitability for Automation.
 - Exploratory Testing Techniques.
 - Effective Bug Reporting and Communication with Engineers.
+- Creating Handoff Documents for Developers.
+- Writing Test Summary Reports for Broader Stakeholder Review.
 - QA Documentation Best Practices using Google Sheets, Docs, and GitHub Summaries.
