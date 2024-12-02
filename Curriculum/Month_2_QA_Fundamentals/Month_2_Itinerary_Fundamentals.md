@@ -125,7 +125,7 @@
 
 ---
 
-### Key Topics Covered in Month 2 (Updated)
+## Key Deliverables for Month 2 
 - Writing Test Cases: Structure and Best Practices.
 - Enhancing Test Coverage: EP and BVA.
 - Test Planning and Regression Testing: Execution and Prioritization.
