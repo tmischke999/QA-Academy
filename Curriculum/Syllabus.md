@@ -1,8 +1,4 @@
-# Syllabus for QA Academy Program
-
-## Intensive and In-Depth Quality Assurance Curriculum
-
----
+# QA Academy Program Syllabus
 
 ## Program Overview
 This six-month program provides comprehensive training in QA methodologies, tools, and best practices. Whether participants are new to QA or looking to deepen their understanding, the structured curriculum ensures a strong foundation through twice-weekly classes, assignments, hands-on projects, and monthly assessments. Participants will start with manual techniques and progress to automation for a holistic learning experience.
@@ -35,8 +31,6 @@ This six-month program provides comprehensive training in QA methodologies, tool
 - Written reflection on key QA concepts.
 - GitHub repository created with a README explaining the participant’s goals for the program.
 
-**Note:** Participants can expect ~8 assignments/projects over the month, including reading and practical setup tasks. Weekly details will be available in the training folders. GitHub will be used throughout the program to store work and build a QA portfolio.
-
 ---
 
 ### **Phase 2: Manual Testing Fundamentals (Month 2)**
@@ -55,83 +49,69 @@ This six-month program provides comprehensive training in QA methodologies, tool
 - Test cases, exploratory testing findings, and bug reports added to GitHub.
 - Exploratory testing findings for a demo application.
 
-**Note:** Assignments and projects will emphasize test case writing, planning, and reporting. Weekly breakdowns will be in the training folders.
+---
+
+### **Phase 3: Accessibility Testing & Introduction to APIs (Month 3)**  
+**Objective:**  
+This month will cover two key testing areas: accessibility testing and an introduction to APIs. In the first two weeks, students will focus on understanding accessibility standards and techniques, using tools like NVDA, Axe, and Lighthouse to evaluate web applications for accessibility compliance. In the second two weeks, students will transition into learning what APIs are, their role in applications, and how to test them using tools like Postman.
+
+**Topics Covered:**  
+- **Weeks 1–2: Accessibility Testing**  
+  - WCAG Standards and ARIA Roles  
+  - Keyboard Navigation and Focus Testing  
+  - Screen Reader Compatibility (NVDA, VoiceOver, TalkBack)  
+  - High Contrast and Reflow Testing  
+- **Weeks 3–4: Introduction to APIs**  
+  - What is an API and how it works  
+  - HTTP Methods (GET, POST, PUT, DELETE)  
+  - Introduction to Postman for API testing  
+  - Writing basic API test cases and validating responses  
+
+**Deliverables:**  
+- **Accessibility Testing Deliverables:**  
+  - Custom checklist for accessibility testing  
+  - Accessibility audit report for a sample website  
+- **API Testing Deliverables:**  
+  - Basic API test cases created in Postman  
+  - API test documentation uploaded to GitHub  
+
+**Note:**  
+Students will continue using Google Sheets to manage test cases and document their work in GitHub. This phase will also include hands-on assignments with real-world accessibility audits and basic API testing practices.
 
 ---
 
-### **Phase 3: Accessibility Testing (Month 3)**
-**Objective:** Learn how to test for accessibility and ensure compliance with WCAG guidelines, focusing on manual techniques.  
+### **Phase 4: Advanced API Testing and Automation (Month 4)**  
+**Objective:**  
+Month 4 will focus on advancing API testing skills, with an emphasis on Postman collections, writing test scripts, and deeper exploration of API testing. Students will learn how to organize API tests into collections, automate tests using Postman, and handle different HTTP methods and responses. The goal is to build proficiency in manual API testing and introduce automation techniques using Postman/Newman.
 
-**Topics Covered:**
-- Accessibility Standards (WCAG, ARIA).
-- Keyboard Navigation and Focus Testing.
-- Screen Reader Compatibility (NVDA, VoiceOver, TalkBack).
-- High Contrast and Reflow Testing.
-- Updating GitHub repositories:
-  - Adding accessibility audit reports and checklists.
+**Topics Covered:**  
+- **Postman Collections and Test Scripts**  
+  - Organizing API tests into Postman collections  
+  - Writing and executing test scripts in Postman  
+  - Validating responses with assertions  
+- **Error Handling and Status Codes**  
+  - Handling different HTTP status codes (200, 404, 500, etc.)  
+  - Writing tests for response validation and error handling  
+- **Automating API Tests**  
+  - Introduction to Newman for Postman automation (Free and open-source)  
+  - Running automated API tests in a CI/CD pipeline  
+  - Writing test scripts to validate API responses  
+- **Advanced API Testing Techniques**  
+  - Working with environments and variables in Postman  
+  - Mocking APIs and testing with simulated data  
 
-**Deliverables:**
-- Custom checklist for accessibility testing.
-- Accessibility audit report for a sample website.
+**Deliverables:**  
+- **Postman Collections:**  
+  - Organize API test cases into collections in Postman  
+  - Create test scripts to validate API responses  
+- **Automation Projects:**  
+  - Automate API tests using Postman/Newman and document the setup process  
+  - Create an end-to-end API testing project, with documentation and results  
+- **Test Summary Reports:**  
+  - Write a comprehensive report summarizing API test cases, scripts, and automation results  
 
-**Note:** Participants will complete ~8 assignments/projects focused on analyzing accessibility issues and testing workflows.
-
----
-
-### **Phase 4: API Testing (Month 4)**
-**Objective:** Gain proficiency in manual API testing using tools like Postman and document results in GitHub.  
-
-**Topics Covered:**
-- HTTP Basics (GET, POST, PUT, DELETE).
-- Setting Up and Using Postman.
-- Writing and Validating API Test Cases.
-- Error Handling and Status Codes.
-- Updating GitHub repositories:
-  - Adding API test cases, execution results, and documentation.
-
-**Deliverables:**
-- API test cases and validation documentation uploaded to GitHub.
-- End-to-end API testing project.
-
-**Note:** Weekly assignments/projects will focus on designing and executing API test cases. Specific details will be outlined in the training folders.
-
----
-
-### **Phase 5: Advanced Topics, Regression Testing, and QA Automation (Month 5)**
-**Objective:** Build on foundational manual testing techniques and transition to automation, leveraging GitHub to store automation scripts.  
-
-**Topics Covered:**
-- Regression Testing Revisited: Identifying candidates for automation.
-- Automation Basics: Tools overview (e.g., Selenium, Playwright).
-- Automating Test Case Execution (manual test cases from Month 2).
-- Automating Accessibility Testing with Tools (e.g., Axe, Lighthouse).
-- Automating API Testing with Postman/Newman.
-- Using GitHub for:
-  - Storing and managing automation scripts.
-  - Using branches for different test types.
-
-**Deliverables:**
-- Regression test suite candidates identified and prioritized.
-- Automated scripts for test case execution uploaded to GitHub.
-- README updated to describe the scripts and their purpose.
-- API automation project.
-
-**Note:** Assignments and projects will focus on transitioning manual testing skills to automation workflows.
-
----
-
-### **Phase 6: Capstone Project and Graduation (Month 6)**
-**Objective:** Apply all learned skills in a capstone project to demonstrate proficiency and finalize the QA portfolio.  
-
-**Capstone Project:**
-- Test a real-world demo application from end-to-end, covering manual, accessibility, and API testing.
-- Automate key regression tests and prepare a comprehensive test report.
-- Finalize GitHub repository:
-  - Organize all work (manual test cases, bug reports, automation scripts).
-  - Write a README summarizing the work and skills demonstrated.
-
-**Final Test:**
-- Comprehensive written and practical test on all topics covered in the program.
+**Note:**  
+Students will be expected to continue using GitHub for documentation of their API tests, test scripts, and automation projects. They will also work on refining their Postman skills and building a portfolio of automated test cases.
 
 ---
 
