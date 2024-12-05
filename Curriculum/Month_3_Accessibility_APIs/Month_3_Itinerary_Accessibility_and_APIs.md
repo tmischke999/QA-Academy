@@ -46,13 +46,14 @@ In **Month 3**, students will focus on **accessibility testing** and get hands-o
 
 ---
 
-**Training 4: Keyboard Navigation Testing**  
+**Training 4: High Contrast and Reflow Testing**  
 - **Topics Covered**:
-  - Learn how to conduct **keyboard navigation testing** to ensure all interactive elements are accessible without a mouse.
-  - We’ll test for issues like **focus traps** and missing or hard-to-reach elements.
+  - Understand **high contrast testing** and its importance for users with low vision.
+  - Learn **reflow testing** techniques to ensure content remains usable when zoomed in or resized.
 
 - **Assignment**:
-  - Conduct a **keyboard navigation test** on the same website from Training 3. Document any focus or accessibility issues that arise.
+  - Perform **high contrast and reflow testing** on the same website from Training 3.
+  - Document any usability challenges for users with visual impairments, including issues identified and suggestions for improvement.
 
 ---
 
