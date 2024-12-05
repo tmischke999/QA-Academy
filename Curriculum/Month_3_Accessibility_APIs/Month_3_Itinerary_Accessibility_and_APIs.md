@@ -11,7 +11,7 @@ In **Month 3**, students will focus on **accessibility testing** and get hands-o
 
 ---
 
-#### **Week 1: Accessibility Testing - WCAG & ARIA Roles**
+#### **Week 1: Accessibility Testing - WCAG & Screen Reader**
 
 **Training 1: Introduction to WCAG Guidelines**  
 - **Topics Covered**:
@@ -24,25 +24,25 @@ In **Month 3**, students will focus on **accessibility testing** and get hands-o
 
 ---
 
-**Training 2: Introduction to ARIA Roles**  
-- **Topics Covered**:
-  - Learn about **ARIA roles** and their role in web accessibility, especially for dynamic content.
-  - We’ll focus on **common ARIA roles** like `role="button"`, `role="navigation"`, and `role="dialog"`.
-
-- **Assignment**:
-  - **ARIA Evaluation**: Evaluate a website for **ARIA role usage** using **Axe** or manual inspection. Suggest improvements for any missing or incorrect roles.
-
----
-
-#### **Week 2: Accessibility Testing - Screen Reader & Keyboard Navigation**
-
-**Training 3: Testing with Screen Readers**  
+**Training 2: Testing with Screen Readers**  
 - **Topics Covered**:
   - Learn how to test websites with **screen readers** like **NVDA** and **VoiceOver**.
   - Ensure **dynamic content** is properly announced and accessible.
 
 - **Assignment**:
   - Test a sample website using **NVDA** (Windows) or **VoiceOver** (Mac/iOS) and document any issues with missing alt text, poor heading structure, or improper content navigation.
+
+---
+
+#### **Week 2: Accessibility Testing - ARIA Roles & Keyboard Navigation**
+
+**Training 3: Introduction to ARIA Roles**  
+- **Topics Covered**:
+  - Learn about **ARIA roles** and their role in web accessibility, especially for dynamic content.
+  - We’ll focus on **common ARIA roles** like `role="button"`, `role="navigation"`, and `role="dialog"`.
+
+- **Assignment**:
+  - **ARIA Evaluation**: Evaluate a website for **ARIA role usage** using **Axe** or manual inspection. Suggest improvements for any missing or incorrect roles.
 
 ---
 
