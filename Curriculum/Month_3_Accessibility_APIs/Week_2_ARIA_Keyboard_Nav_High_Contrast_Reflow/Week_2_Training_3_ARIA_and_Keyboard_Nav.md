@@ -1,7 +1,5 @@
 # **Month 3 Training 3 - ARIA Roles, Screen Reader, and Keyboard Navigation Usage**
 
----
-
 ### **Objective**
 
 In this training, students will gain an understanding of **ARIA roles** and how they enhance web accessibility for assistive technologies. By the end of this session, students will:

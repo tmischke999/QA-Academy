@@ -1,7 +1,5 @@
 # **Month 3: Accessibility Testing & Introduction to API Testing**
 
----
-
 ### **Overview:**
 In **Month 3**, students will focus on **accessibility testing** and get hands-on experience with **API testing**. The first two weeks will concentrate on learning about **WCAG guidelines**, **ARIA roles**, **screen reader testing**, and **keyboard navigation testing**. The final two weeks will introduce **Postman** and **API testing**, where students will create **GET** and **POST** requests and learn to validate API responses.
 

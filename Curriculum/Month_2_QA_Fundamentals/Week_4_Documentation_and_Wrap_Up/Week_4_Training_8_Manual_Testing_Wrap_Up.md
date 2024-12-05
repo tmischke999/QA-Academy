@@ -1,7 +1,5 @@
 # Week 4: Training 8 - Writing a Test Summary Report and Month Wrap-Up
 
----
-
 ## Objective
 
 The purpose of this training is to guide students through the process of creating a comprehensive test summary report. This report will serve as a final deliverable for Month 2, summarizing all testing activities, findings, and reflections on their progress. By the end of this training, students will:

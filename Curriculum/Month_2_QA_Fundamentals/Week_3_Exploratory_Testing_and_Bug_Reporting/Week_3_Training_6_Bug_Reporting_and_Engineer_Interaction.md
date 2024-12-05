@@ -1,7 +1,5 @@
 # Week 3: Training 6 - Bug Reporting Fundamentals
 
----
-
 ## Objective
 
 By the end of this training, students will:

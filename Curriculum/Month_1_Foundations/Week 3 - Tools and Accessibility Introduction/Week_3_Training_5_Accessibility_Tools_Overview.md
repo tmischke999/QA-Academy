@@ -1,7 +1,5 @@
 # Week 3: Training 5 - Accessibility Tools Overview
 
----
-
 ## Objective
 
 Introduce students to the tools and techniques used for accessibility testing. By the end of this training, students will:

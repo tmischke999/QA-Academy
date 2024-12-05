@@ -1,7 +1,5 @@
 # **Month 3: Training 2 - Screen Reader & Keyboard Navigation Testing**
 
----
-
 ### **Objective**
 
 In this training, students will gain hands-on experience with **screen reader compatibility** and **keyboard navigation testing**. By the end of this session, students will:

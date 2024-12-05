@@ -1,7 +1,5 @@
 # **Month 3 Training 5 - Introduction to APIs and Postman Setup**
 
----
-
 ### **Objective**
 
 Introduce students to the fundamentals of **APIs** and the use of **Postman** for API testing. By the end of this training, students will:

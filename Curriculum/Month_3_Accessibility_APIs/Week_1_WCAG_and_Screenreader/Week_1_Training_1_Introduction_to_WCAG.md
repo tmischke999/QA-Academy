@@ -1,7 +1,5 @@
 # **Month 3: Training 1 - Introduction to WCAG Guidelines**
 
----
-
 ### **Objective**
 
 In this training, students will be introduced to the fundamentals of **accessibility testing**, focusing specifically on **WCAG guidelines**. By the end of this session, students will:

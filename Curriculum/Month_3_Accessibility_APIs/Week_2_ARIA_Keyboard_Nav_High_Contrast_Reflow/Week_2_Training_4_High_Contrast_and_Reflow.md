@@ -1,7 +1,5 @@
 # **Month 3 Training 4 - High Contrast and Reflow Testing**
 
----
-
 ### **Objective**
 
 In this training, students will learn the principles and techniques behind **high contrast** and **reflow testing** to ensure web content is accessible to users with visual impairments or those relying on screen magnifiers. By the end of the training, students will:

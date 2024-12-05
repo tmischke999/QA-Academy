@@ -1,7 +1,5 @@
   # Month 2 Itinerary: Manual Testing Fundamentals
 
----
-
 ## Week 1: Writing Effective Test Cases and Introduction to Test Case Design
 
 ### Training 1: Writing Effective Test Cases
