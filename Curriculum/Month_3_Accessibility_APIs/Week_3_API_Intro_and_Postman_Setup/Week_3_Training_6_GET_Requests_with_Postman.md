@@ -1,7 +1,5 @@
 # **Month 3 Training 6 - Making GET Requests with Postman**
 
----
-
 ### **Objective**
 
 In this training, students will expand their understanding of **GET requests** and how to interact with multiple **public APIs** using **Postman**. By the end of this training, students will:
