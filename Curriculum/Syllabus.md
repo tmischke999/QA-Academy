@@ -52,8 +52,7 @@ This six-month program provides comprehensive training in QA methodologies, tool
 ---
 
 ### **Phase 3: Accessibility Testing & Introduction to APIs (Month 3)**  
-**Objective:**  
-This month will cover two key testing areas: accessibility testing and an introduction to APIs. In the first two weeks, students will focus on understanding accessibility standards and techniques, using tools like NVDA, Axe, and Lighthouse to evaluate web applications for accessibility compliance. In the second two weeks, students will transition into learning what APIs are, their role in applications, and how to test them using tools like Postman.
+**Objective:** Cover two key testing areas: accessibility testing and an introduction to APIs. In the first two weeks, students will focus on understanding accessibility standards and techniques, using tools like NVDA, Axe, and Lighthouse to evaluate web applications for accessibility compliance. In the second two weeks, students will transition into learning what APIs are, their role in applications, and how to test them using tools like Postman.
 
 **Topics Covered:**  
 - **Weeks 1–2: Accessibility Testing**  
@@ -75,43 +74,94 @@ This month will cover two key testing areas: accessibility testing and an introd
   - Basic API test cases created in Postman  
   - API test documentation uploaded to GitHub  
 
-**Note:**  
-Students will continue using Google Sheets to manage test cases and document their work in GitHub. This phase will also include hands-on assignments with real-world accessibility audits and basic API testing practices.
-
 ---
 
 ### **Phase 4: Advanced API Testing and Automation (Month 4)**  
-**Objective:**  
-Month 4 will focus on advancing API testing skills, with an emphasis on Postman collections, writing test scripts, and deeper exploration of API testing. Students will learn how to organize API tests into collections, automate tests using Postman, and handle different HTTP methods and responses. The goal is to build proficiency in manual API testing and introduce automation techniques using Postman/Newman.
+**Objective:** Deepen API testing skills by introducing JavaScript for Postman test scripts, advancing automation techniques, and integrating testing workflows into CI/CD pipelines.
 
+#### **Weeks 1–2: JavaScript Training for API Testing**  
 **Topics Covered:**  
-- **Postman Collections and Test Scripts**  
-  - Organizing API tests into Postman collections  
-  - Writing and executing test scripts in Postman  
-  - Validating responses with assertions  
-- **Error Handling and Status Codes**  
-  - Handling different HTTP status codes (200, 404, 500, etc.)  
-  - Writing tests for response validation and error handling  
-- **Automating API Tests**  
-  - Introduction to Newman for Postman automation (Free and open-source)  
-  - Running automated API tests in a CI/CD pipeline  
-  - Writing test scripts to validate API responses  
-- **Advanced API Testing Techniques**  
-  - Working with environments and variables in Postman  
-  - Mocking APIs and testing with simulated data  
+- **Introduction to JavaScript for Testers:**  
+  - JavaScript syntax basics: variables, data types, and control structures.  
+  - Writing and understanding JSON.  
+  - Practical uses of JavaScript in QA, such as writing test assertions.  
+- **Practical Applications of JavaScript:**  
+  - Debugging and running JavaScript scripts in Postman.  
+  - Writing assertions with JavaScript snippets in Postman.  
+  - Real-world QA use cases for JavaScript, including handling dynamic data.  
 
 **Deliverables:**  
-- **Postman Collections:**  
-  - Organize API test cases into collections in Postman  
-  - Create test scripts to validate API responses  
-- **Automation Projects:**  
-  - Automate API tests using Postman/Newman and document the setup process  
-  - Create an end-to-end API testing project, with documentation and results  
-- **Test Summary Reports:**  
-  - Write a comprehensive report summarizing API test cases, scripts, and automation results  
+- Complete basic JavaScript exercises integrated with Postman test scripts.  
+- Submit a reflection document on the role of JavaScript in automating API tests.  
 
-**Note:**  
-Students will be expected to continue using GitHub for documentation of their API tests, test scripts, and automation projects. They will also work on refining their Postman skills and building a portfolio of automated test cases.
+#### **Weeks 3–4: Advanced API Testing Techniques**  
+**Topics Covered:**  
+- **Postman Automation and CI/CD Integration:**  
+  - Running Postman collections with Newman.  
+  - Exporting and sharing automated tests for collaborative workflows.  
+  - Integrating Postman tests into CI/CD pipelines.  
+- **Error Handling and Mock APIs:**  
+  - Using Postman environments for dynamic testing scenarios.  
+  - Handling response errors and testing edge cases with mock APIs.  
+- **Comprehensive API Testing Project:**  
+  - Combining manual and automated tests into a cohesive API testing strategy.  
+
+**Deliverables:**  
+- Submit an automated test collection using Postman.  
+- Write and submit a test summary report covering manual and automated tests.  
+
+---
+
+### **Phase 5: Advanced Topics in QA (Month 5)**  
+**Objective:** Introduce advanced QA methodologies, exploratory testing strategies, performance testing, and UI automation using Playwright. Simplify Playwright training to focus on execution and result analysis.
+
+#### **Weeks 1–2: Exploratory and Performance Testing**  
+**Topics Covered:**  
+- Advanced exploratory testing techniques, focusing on edge cases and test prioritization.  
+- Introduction to performance testing tools and metrics (e.g., Lighthouse, WebPageTest).  
+- Practical applications of performance metrics in QA.  
+
+**Deliverables:**  
+- Submit a performance test report analyzing test results.  
+- Document findings from exploratory testing exercises.  
+
+#### **Weeks 3–4: UI Automation with Playwright**  
+**Topics Covered:**  
+- **Introduction to Playwright:**  
+  - Overview of Playwright and its role in UI automation.  
+  - Using the Playwright CLI and record-and-playback features.  
+- **Running Pre-Built Tests:**  
+  - Execute pre-written Playwright scripts provided by the instructor.  
+  - Analyze test results, logs, and screenshots.  
+- **Basic Scripting (Optional):**  
+  - Modify a simple Playwright script (written in JavaScript).  
+  - Add or adjust a test step, such as verifying an element's visibility or URL.  
+
+**Deliverables:**  
+- Run and submit results from a pre-written Playwright test script.  
+- Optional: Modify the script to test a new feature and provide a brief explanation of changes made.  
+
+---
+
+### **Phase 6: Capstone Project and Career Preparation (Month 6)**
+**Objective:** Provide students with a final project to showcase their skills and prepare them for the job market. Focus on applying all skills learned and tailoring their resumes for QA roles.
+
+#### **Weeks 1–2: Capstone Project**
+**Topics Covered:**
+- Develop a comprehensive test plan for a demo application.
+- Execute test cases covering accessibility, API, and UI testing.
+- Document findings in a professional test summary report.
+
+#### **Weeks 3–4: Career Preparation**
+**Topics Covered:**
+- Resume writing and tailoring for QA roles.
+- Understanding job postings and matching skills.
+- Mock interviews and interview preparation.
+
+**Deliverables:**
+- Completed capstone project, including a test plan, executed test cases, and a final report.
+- Updated and tailored resumes for QA roles.
+- Participation in mock interview sessions with feedback provided.
 
 ---
 
@@ -131,3 +181,6 @@ Students will be expected to continue using GitHub for documentation of their AP
 - Completion of all assignments and projects.
 - Passing scores on all monthly and final tests.
 - Submission of the capstone project with a detailed report.
+
+---
+
