@@ -143,6 +143,8 @@ This training session focuses on testing edge cases and error responses, alongsi
 
 1. **Setup Mock API**:
    - Access the provided Mock API at `https://mockapi.io`.
+   - Create an account.
+   - Add a 'New Project' labeled QA Academy and Add the API Prefix: /api/vi
 
 2. **Create Custom Data**:
    - Perform the following tasks using the Mock API:
