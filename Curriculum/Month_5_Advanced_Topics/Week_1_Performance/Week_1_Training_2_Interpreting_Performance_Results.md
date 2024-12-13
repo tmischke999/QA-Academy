@@ -1,7 +1,5 @@
 # **Training 2: Analyzing and Interpreting Performance Results**
 
----
-
 ## **Objective**
 
 This training focuses on building students' skills in analyzing and interpreting the results of performance audits conducted with Lighthouse. Students will learn to identify key patterns, prioritize recommendations, and present actionable strategies for improving web performance. By the end of this training, students will:

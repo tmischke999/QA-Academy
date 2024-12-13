@@ -1,7 +1,5 @@
 # **Training 1: Introduction to Performance Testing**
 
----
-
 ## **Objective**
 
 Introduce students to the fundamentals of performance testing, focusing on understanding key performance metrics and using Lighthouse to evaluate a web application's performance. By the end of this session, students will be able to:
