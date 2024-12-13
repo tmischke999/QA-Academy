@@ -1,7 +1,5 @@
 # **Month 4: Training 7 - API Test Summary Reports**
 
----
-
 ## **Objective**
 
 This training session will guide students in creating comprehensive API test summary reports. These reports will consolidate the results of automated tests, manual tests, and CI/CD pipeline executions, ensuring students understand how to effectively communicate testing outcomes. By the end of this session, students will:
