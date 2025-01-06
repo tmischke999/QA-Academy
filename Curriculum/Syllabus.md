@@ -112,34 +112,34 @@ This six-month program provides comprehensive training in QA methodologies, tool
 
 ---
 
-### **Phase 5: Advanced Topics in QA (Month 5)**  
-**Objective:** Introduce advanced QA methodologies, exploratory testing strategies, performance testing, and UI automation using Playwright. Simplify Playwright training to focus on execution and result analysis.
+### **Phase 5: Advanced Testing Techniques and UI Automation (Month 5)**  
+**Objective:** Focuses on equipping students with advanced testing skills, including performance testing, exploratory testing, and UI automation using Playwright. By the end of this phase, students will have hands-on experience with essential tools and techniques, enabling them to execute complex testing scenarios and document findings effectively.
 
 #### **Weeks 1–2: Exploratory and Performance Testing**  
 **Topics Covered:**  
-- Advanced exploratory testing techniques, focusing on edge cases and test prioritization.  
-- Introduction to performance testing tools and metrics (e.g., Lighthouse, WebPageTest).  
-- Practical applications of performance metrics in QA.  
+- Performance Testing using Lighthouse.
+- Load Testing fundamentals with JMeter.
+- Key metrics: response time, throughput, and error rate.
+- Identifying and documenting performance bottlenecks. 
 
 **Deliverables:**  
-- Submit a performance test report analyzing test results.  
-- Document findings from exploratory testing exercises.  
+- Performance Testing Reports.
+- Load Testing Documentation.
 
 #### **Weeks 3–4: UI Automation with Playwright**  
 **Topics Covered:**  
+- **Advanced Exploratory Testing:**
+  - Exploratory Testing: heuristics, edge case identification, and SBET documentation.
 - **Introduction to Playwright:**  
   - Overview of Playwright and its role in UI automation.  
-  - Using the Playwright CLI and record-and-playback features.  
-- **Running Pre-Built Tests:**  
-  - Execute pre-written Playwright scripts provided by the instructor.  
-  - Analyze test results, logs, and screenshots.  
-- **Basic Scripting (Optional):**  
-  - Modify a simple Playwright script (written in JavaScript).  
-  - Add or adjust a test step, such as verifying an element's visibility or URL.  
+  - Setting up Playwright in VS Code.
+  - Using the Playwright CLI and record-and-playback features. 
+  - Writing and debugging basic Playwright scripts.
+  - End-of-Month Project combining performance testing, exploratory testing, and UI automation.
 
 **Deliverables:**  
-- Run and submit results from a pre-written Playwright test script.  
-- Optional: Modify the script to test a new feature and provide a brief explanation of changes made.  
+- Playwright Automation Results.
+- End-of-Month Culmination Project.
 
 ---
 
