@@ -118,10 +118,10 @@ Use the following structure for the test plan:
 
      **Test Plan Review Checklist**:
 
-- [ ] Are all test scenarios clearly defined with inputs, actions, and expected outcomes?
-- [ ] Have edge cases and success criteria been considered for each scenario?
-- [ ] Does the plan align with the objectives outlined in the introduction?
-- [ ] Have all team members reviewed the test plan for completeness?
+        - [ ] Are all test scenarios clearly defined with inputs, actions, and expected outcomes?
+        - [ ] Have edge cases and success criteria been considered for each scenario?
+        - [ ] Does the plan align with the objectives outlined in the introduction?
+        - [ ] Have all team members reviewed the test plan for completeness?
 
 
      **Example Test Case**:
