@@ -1,8 +1,8 @@
-  # **Month 5: Advanced Testing Techniques and UI Automation**
+# **Month 5: Advanced Testing Techniques and UI Automation**
 
 ## **Overview**
 
-In Month 5, students will deepen their understanding of performance and exploratory testing while gaining foundational skills in UI automation using Playwright. This month is structured to build on the knowledge gained in previous months, ensuring students can confidently execute advanced testing scenarios and document results effectively.
+In Month 5, students will deepen their understanding of performance and exploratory testing while gaining foundational skills in UI automation using Playwright. This month builds on the knowledge gained in previous months, ensuring students can confidently execute advanced testing scenarios, document results effectively, and transition into UI automation.
 
 By the end of Month 5, students will:
 
@@ -12,8 +12,6 @@ By the end of Month 5, students will:
 - Complete a comprehensive end-of-month project consolidating all learned skills.
 
 ---
-
-
 
 ## **Week 1: Performance Testing Basics**
 
@@ -79,49 +77,54 @@ By the end of Month 5, students will:
 
 ## **Week 3: Exploratory Testing**
 
-### **Training 5: Exploratory Testing Basics**
+### **Training 5: Advanced Exploratory Testing and Documentation**
 
-**Objective**: Introduce exploratory testing methods and heuristics.
+**Objective**: Apply advanced exploratory testing techniques, emphasizing heuristics, edge case identification, and structured documentation.
 
 **Topics Covered**:
-- What is exploratory testing, and why is it valuable?
-- Exploratory testing heuristics (e.g., SFDPOT - Structure, Function, Data, Platform, Operations, and Time).
-- How to create a simple exploratory testing plan.
+- SFDPOT heuristic with practical examples.
+- Identifying edge cases in workflows.
+- Session-Based Exploratory Testing (SBET): Planning, executing, and documenting findings.
+- Writing detailed bug reports with actionable recommendations.
 
 **Assignment**:
-- Create an exploratory testing checklist.
-- Perform a session-based exploratory testing (SBET) on a demo application.
+- Conduct a 45-minute SBET session on [https://the-internet.herokuapp.com](https://the-internet.herokuapp.com).
+- Create a detailed report with:
+  - Session goals.
+  - Observations and edge cases discovered.
+  - Two actionable bug reports with recommendations.
 
 ---
 
-### **Training 6: Documenting Exploratory Testing**
+### **Training 6: Setting Up Playwright**
 
-**Objective**: Teach students how to document exploratory testing findings and write actionable bug reports.
+**Objective**: Introduce Playwright, focusing on environment setup and project configuration.
 
 **Topics Covered**:
-- Session-Based Exploratory Testing (SBET): documenting session goals, findings, and time spent.
-- Writing actionable bug reports based on exploratory testing results.
+- Installing Playwright and configuring VS Code.
+- Setting up a Playwright project with best practices for folder structures.
+- Running sample Playwright scripts.
 
 **Assignment**:
-- Conduct a second exploratory testing session focused on edge cases.
-- Create a session-based exploratory testing report (SBET) and submit one detailed bug report.
+- Set up a Playwright project in VS Code.
+- Execute a sample Playwright test and capture initial results.
 
 ---
 
 ## **Week 4: UI Automation with Playwright**
 
-### **Training 7: Introduction to Playwright**
+### **Training 7: Writing Basic Playwright Tests**
 
-**Objective**: Introduce students to UI automation with Playwright and teach them to run pre-built scripts.
+**Objective**: Teach students to write and execute basic Playwright tests, including assertions.
 
 **Topics Covered**:
-- Overview of UI automation.
-- Running pre-built Playwright scripts: step-by-step walkthrough.
-- Interpreting Playwright logs, screenshots, and error messages.
+- Playwright syntax and structure for creating tests.
+- Writing simple tests for UI elements.
+- Debugging and interpreting Playwright test results.
 
 **Assignment**:
-- Run provided Playwright scripts on a demo application.
-- Capture and document results, including logs, screenshots, and test summaries.
+- Write and execute at least two Playwright tests on the demo application.
+- Document test results, including screenshots and logs.
 
 ---
 
@@ -140,7 +143,7 @@ By the end of Month 5, students will:
 - Develop a project deliverable that includes:
   - A performance testing report (Lighthouse or JMeter).
   - An exploratory testing report (SBET and bug report).
-  - A modified Playwright script and its test results.
+  - Playwright scripts and test results.
 - Submit all deliverables along with a reflection document summarizing key learnings and challenges.
 
 ---
@@ -159,21 +162,20 @@ By the end of Month 5, students will:
 3. **Exploratory Testing Documentation**:
    - Session-Based Exploratory Testing (SBET) reports.
    - Exploratory testing checklist from Training 5.
-   - At least one actionable bug report.
+   - At least two actionable bug reports.
 
 4. **UI Automation Results**:
    - Logs and screenshots from Playwright runs.
-   - Modified Playwright script with results.
+   - Basic Playwright test scripts and results.
 
 5. **Reflection Document**:
    - A summary of Month 5’s learnings, challenges, and how the skills will be applied in QA roles.
 
 6. **End-of-Month Culmination Project**:
-   - A consolidated deliverable combining outputs from performance, load, exploratory, and UI automation testing.   - Modified Playwright script with results.
+   - A consolidated deliverable combining outputs from performance, load, exploratory, and UI automation testing.
 
 ---
 
 ## **Looking Ahead**
 
 In Month 6, students will undertake a capstone project that consolidates all the skills learned throughout the QA Academy. They will create a comprehensive test plan, execute test cases covering multiple testing types (e.g., accessibility, API, UI), and document findings in a professional test summary report. Additionally, students will focus on career preparation, including tailoring resumes for QA roles, preparing for interviews, and showcasing their portfolio-ready deliverables.
-
