@@ -10,13 +10,15 @@ Introduce students to Playwright by guiding them step-by-step through the instal
    - Comprehensive guide to getting started with Playwright.
 2. **[GitHub Docs: Creating a Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)**  
    - Step-by-step instructions for creating and managing GitHub repositories.
-3. **[VS Code Beginner Tutorial (YouTube)](https://www.youtube.com/watch?v=WPqXP_kLzpo)**  
+3. **[What is Playwright? (YouTube)](https://www.youtube.com/watch?v=wGr5rz8WGCE)**
+   - Beginner-friendly video on Playwright introduction tutorial, features & demo.
+4. **[VS Code Beginner Tutorial (YouTube)](https://www.youtube.com/watch?v=WPqXP_kLzpo)**  
    - Beginner-friendly introduction to installing and using Visual Studio Code.
-4. **[Installing Node.js (Node.js Official Guide)](https://nodejs.org/en/)**  
+5. **[Installing Node.js (Node.js Official Guide)](https://nodejs.org/en/)**  
    - Instructions for downloading and setting up Node.js.
-5. **[Bash Basics for Beginners (freeCodeCamp)](https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/)**  
+6. **[Bash Basics for Beginners (freeCodeCamp)](https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/)**  
    - Covers essential terminal commands.
-6. **[Git Bash Introduction (YouTube)](https://www.youtube.com/watch?v=iGutIN5t9Mo)**  
+7. **[Git Bash Introduction (YouTube)](https://www.youtube.com/watch?v=iGutIN5t9Mo)**  
    - Beginner-friendly tutorial on using Git Bash for Git commands.
 
 ---
