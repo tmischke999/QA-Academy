@@ -35,6 +35,7 @@ Begin executing the capstone project by applying manual, exploratory, and access
 ## **Focus**
 
 1. **Execute Manual Test Cases**:
+
    - Perform the manual test cases created in Week 1 for core features:
      - Login functionality.
      - Dropdown interactions.
@@ -44,6 +45,7 @@ Begin executing the capstone project by applying manual, exploratory, and access
      - Any issues encountered, with details like steps to reproduce and screenshots.
 
 2. **Perform Exploratory Testing**:
+
    - Identify potential gaps in test coverage by exploring:
      - Edge cases and unexpected user behaviors.
      - Scenarios not covered by existing test cases.
@@ -52,6 +54,7 @@ Begin executing the capstone project by applying manual, exploratory, and access
      - Heuristics-based testing: Using guidelines like SFDPOT (Structure, Function, Data, Platform, Operations, Time).
 
 3. **Conduct Accessibility Audits**:
+
    - Use tools like Axe, Lighthouse, and NVDA to test for:
      - WCAG compliance.
      - Keyboard navigation.
@@ -61,6 +64,7 @@ Begin executing the capstone project by applying manual, exploratory, and access
      - Example: "NVDA did not announce error messages for invalid form inputs."
 
 4. **Document Findings and Recommendations**:
+
    - Summarize manual and exploratory testing results:
      - List key findings, such as uncovered edge cases or usability issues.
      - Provide screenshots or logs where applicable.
@@ -84,22 +88,19 @@ Begin executing the capstone project by applying manual, exploratory, and access
 ### **2. Execute Your Exploratory Testing Plan**
 
 - Use the exploratory testing objectives and scenarios defined in your Week 1 capstone planning document.
+
 - Follow the planned time limits for each session (e.g., 30 minutes).
+
 - Document outcomes for each scenario:
+
   - Scenarios tested.
   - Observations and issues encountered.
   - Suggested improvements or additional test cases to explore.
 
-- Use the exploratory testing objectives and scenarios defined in your Week 1 capstone planning document.
-- Follow the planned time limits for each session (e.g., 30 minutes).
-- Document outcomes for each scenario:
-  - Scenarios tested.
-  - Observations and issues encountered.
-  - Suggested improvements or additional test cases to explore.
-
-### **2. Conduct Accessibility Audits**
+### **3. Conduct Accessibility Audits**
 
 1. **Run Axe Audits**:
+
    - Install the Axe browser extension.
    - Navigate to the chosen application (e.g., [The Internet](https://the-internet.herokuapp.com)).
    - Run an audit by clicking the "Analyze" button.
@@ -107,32 +108,38 @@ Begin executing the capstone project by applying manual, exploratory, and access
      - Missing labels, low contrast, or ARIA violations.
 
 2. **Use Lighthouse for Accessibility**:
+
    - Open Chrome DevTools > Lighthouse tab.
    - Select "Accessibility" and run the audit.
    - Save the report as a PDF and note key metrics such as contrast issues or missing labels.
 
 3. **Test with NVDA**:
+
    - Enable NVDA and navigate the application.
    - Test critical paths (e.g., logging in, submitting forms) while listening for screen reader feedback.
    - Note any issues with announcements, focus order, or error message accessibility.
 
-### **3. Document Your Findings**
+### **4. Document Your Findings**
 
 1. **Bug Reporting Skills**:
-   - Write clear and actionable bug reports using the following format:
-     | Field              | Example                                       |
-     |--------------------|-----------------------------------------------|
-     | **Title**          | Error message not displayed for invalid password |
-     | **Steps to Reproduce** | 1. Navigate to the login page.
-2. Enter a valid username and an invalid password.
-3. Click the "Login" button. |
-     | **Expected Result** | An error message should display.             |
-     | **Actual Result**   | No error message displayed.                  |
-     | **Severity**        | High                                         |
-     | **Priority**        | Medium                                       |
-     | **Supporting Evidence** | Include screenshots or logs.               |
 
-2. **Defect Tracking**:
+   - Write clear and actionable bug reports using the following format:
+     | Field                  | Example                                          |
+     | ---------------------- | ------------------------------------------------ |
+     | **Title**              | Error message not displayed for invalid password |
+     | **Steps to Reproduce** | 1. Navigate to the login page.                   |
+
+2. Enter a valid username and an invalid password.
+
+3. Click the "Login" button. |
+   \| **Expected Result** | An error message should display.             |
+   \| **Actual Result**   | No error message displayed.                  |
+   \| **Severity**        | High                                         |
+   \| **Priority**        | Medium                                       |
+   \| **Supporting Evidence** | Include screenshots or logs.               |
+
+4. **Defect Tracking**:
+
    - Use defect tracking tools like Jira or Trello if available.
    - Alternatively, create a simple bug log in Google Sheets with the following columns:
      - Bug ID
@@ -142,11 +149,13 @@ Begin executing the capstone project by applying manual, exploratory, and access
      - Assigned to
      - Supporting Evidence
 
-3. **Real-World Examples**:
+5. **Real-World Examples**:
+
    - Exploratory Testing: Test login functionality for brute force attempts to ensure security.
    - Accessibility Testing: Verify WCAG compliance for high-traffic e-commerce websites to ensure usability for all users.
 
-1. **Exploratory Testing Report**:
+6. **Exploratory Testing Report**:
+
    - Use a structured format:
      - Feature tested.
      - Scenarios explored.
@@ -160,7 +169,8 @@ Begin executing the capstone project by applying manual, exploratory, and access
      Recommendation: Provide specific feedback for invalid inputs.
      ```
 
-2. **Accessibility Testing Report**:
+7. **Accessibility Testing Report**:
+
    - Include a summary of findings for each tool used (Axe, Lighthouse, NVDA).
    - Document each issue with:
      - Description.
@@ -181,18 +191,22 @@ Begin executing the capstone project by applying manual, exploratory, and access
 Complete the following tasks to demonstrate your understanding of manual, exploratory, and accessibility testing:
 
 1. **Manual Testing**:
+
    - Execute the manual test cases created in Week 1.
    - Document pass/fail outcomes and any issues encountered.
 
 2. **Exploratory Testing**:
+
    - Perform at least two exploratory testing sessions on your chosen application.
    - Document findings in an exploratory testing report.
 
 3. **Accessibility Testing**:
+
    - Run accessibility audits using Axe, Lighthouse, and NVDA.
    - Document findings in an accessibility testing report.
 
 4. **Submit Work**:
+
    - Share the link to your GitHub repository in the QA Academy Slack channel.
    - Ensure the repository includes:
      - Exploratory testing report in the `docs/` folder.
@@ -205,6 +219,7 @@ Complete the following tasks to demonstrate your understanding of manual, explor
      - How did writing and organizing bug reports improve your QA process?
 
 5. **Common Mistakes to Avoid**:
+
    - Missing edge cases or vague success criteria.
    - Unclear bug descriptions or insufficient evidence.
    - Failing to document accessibility testing steps and results.
