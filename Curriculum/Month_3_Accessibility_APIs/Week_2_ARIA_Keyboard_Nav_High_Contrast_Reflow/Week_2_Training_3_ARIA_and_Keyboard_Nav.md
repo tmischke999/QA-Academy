@@ -103,9 +103,7 @@ To supplement this training, students must explore the following resources to bu
       Why it’s a problem: Screen readers cannot announce the purpose of the button.
       WCAG Principle: Perceivable - Name, Role, Value (4.1.2).
       Recommendation: Add an ARIA role of “button” and a label describing the button’s function.
-      ```
-
-      ```plaintext
+      
       Test: Keyboard Navigation Failures
       Issue: The dropdown menu cannot be accessed using the Tab key.
       Why it’s a problem: Keyboard-only users cannot select options in the dropdown.
