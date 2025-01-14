@@ -53,22 +53,64 @@ To supplement this training, students should explore the following resources bef
 ### **Assignment**
 
 #### **Part 1: Understand WCAG Guidelines**
-- **Objective**: Gain a foundational understanding of WCAG by reviewing the provided resources.
-- **Instructions**: Read through the WCAG Quick Reference and watch the WCAG 2.1 Crash Course video.
-- **Specific Task**: Write a summary of the four principles of WCAG and provide one example of how each principle can be applied in web development.
-
-#### **Part 2: Perform a WCAG Audit**
-- **Objective**: Apply WCAG guidelines to evaluate the accessibility of a sample website.
+- **Objective**: Learn about common accessibility issues and their impact on users.
 - **Instructions**:
-  - Choose a public website (e.g., a news site, blog, or e-commerce site).
-  - Use the **WCAG Quick Reference** to guide your evaluation.
-  - Analyze the site for compliance with the **Perceivable**, **Operable**, **Understandable**, and **Robust** principles.
-- **Specific Task**: Document at least three accessibility issues you identify, describe the WCAG principle violated, and suggest an improvement.
+  1. Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+  2. Navigate to the **"Content Identified by Location"** section.
+  3. Read the examples provided, focusing on:
+     - How content is described only by its position (e.g., "Click the button on the left").
+     - Why this creates challenges for screen reader users.
+  4. Write a short explanation (2-3 sentences) of what the issue is and why it violates accessibility standards.
 
----
+#### **Part 2: Write Bug Reports**
+- **Objective**: Practice documenting accessibility issues.
+- **Instructions**:
+  1. Choose **two issues** from the **Accessibility Tool Audit** examples.
+     - Suggested sections: **Empty Paragraphs**, **Missing ARIA Labels**, or **Text Size**.
+  2. For each issue:
+     - Write a bug report using the following format:
+       ```plaintext
+       Title: [Describe the issue concisely]
+       Steps to Reproduce:
+         1. Go to [specific page/section].
+         2. Identify [specific element causing the issue].
+       Expected Result: [Describe what should happen if the issue did not exist.]
+       Actual Result: [Describe what happens currently.]
+       WCAG Reference: [Provide the exact WCAG guideline, e.g., Perceivable - Text Alternatives (1.1.1)]
+       Recommendation: [Suggest a fix for the issue, e.g., Add appropriate alt text.]
+       ```
+     - Example:
+       ```plaintext
+       Title: Button not accessible to screen readers
+       Steps to Reproduce:
+         1. Navigate to the homepage.
+         2. Tab to the "Learn More" button.
+       Expected Result: Screen readers announce the button text as "Learn More."
+       Actual Result: The button is announced as "Button."
+       WCAG Reference: Operable - Name, Role, Value (4.1.2)
+       Recommendation: Add an ARIA label to the button describing its function.
+       ```
 
-### **Submission Instructions**
-- **How to Submit**: Complete the assignment in a Google Doc and share the link in the designated Slack channel for feedback. Ensure sharing settings allow "Anyone with the link" to view.
+#### **Part 3: Execute a Sample Accessibility Test**
+- **Objective**: Conduct a hands-on accessibility audit.
+- **Instructions**:
+  1. Use the website [The Internet](https://the-internet.herokuapp.com).
+  2. Test the **login page** for the following:
+     - Missing alt text on images.
+     - Keyboard navigation issues.
+     - Text contrast problems.
+  3. Document findings for **one issue**:
+     - What did you test?
+     - What issue did you find?
+     - Which WCAG principle was violated?
+     - What recommendation would you provide?
+
+#### **Submission Instructions**
+- Submit all work in a **Google Doc**:
+  1. Include your summary from **Part 1**.
+  2. Add your bug reports for **Part 2**.
+  3. Document your test findings for **Part 3**.
+- Share the Google Doc link in the designated Slack channel.
 
 ---
 
