@@ -36,7 +36,7 @@ Begin executing the capstone project by applying manual, exploratory, and access
 
 1. **Execute Manual Test Cases**:
 
-   - Perform the manual test cases created in Week 1 for core features:
+   - Perform the manual test cases created in Capstone Planning for core features:
      - Login functionality.
      - Dropdown interactions.
      - Form validation.
