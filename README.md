@@ -92,6 +92,28 @@ Below is a list of tools and resources used throughout the QA Academy Program. F
 
 ---
 
+### **Capstone Project Deliverables**
+
+This repository is designed to showcase your capstone project. To ensure clarity and professionalism, structure your deliverables as follows:
+
+1. **Repository Overview**:
+   - Organize your project into these key folders:
+     ```plaintext
+     ├── docs/        # Test plans, reports, and documentation
+     ├── scripts/     # Automation scripts (API and UI)
+     ├── results/     # Performance metrics and test results
+     ```
+
+2. **README Content**:
+   - Use this file to:
+     - Provide an overview of the project’s objectives.
+     - Include instructions for navigating the repository and running automation scripts.
+     - Summarize key findings and recommendations from your testing efforts.
+
+By adhering to this structure, you’ll create a repository that is ready to showcase during interviews and to stakeholders.
+
+---
+
 ## **Contributing**
 If you’d like to contribute to this repository (e.g., by adding resources or improving documentation), feel free to submit a pull request. Contributions are always welcome!
 
