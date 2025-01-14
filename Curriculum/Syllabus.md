@@ -146,13 +146,13 @@ This six-month program provides comprehensive training in QA methodologies, tool
 ### **Phase 6: Capstone Project and Career Preparation (Month 6)**
 **Objective:** Provide students with a final project to showcase their skills and prepare them for the job market. Focus on applying all skills learned and tailoring their resumes for QA roles.
 
-#### **Weeks 1–2: Capstone Project**
+#### **Weeks 1–3: Capstone Project**
 **Topics Covered:**
 - Develop a comprehensive test plan for a demo application.
 - Execute test cases covering accessibility, API, and UI testing.
 - Document findings in a professional test summary report.
 
-#### **Weeks 3–4: Career Preparation**
+#### **Week 4: Career Preparation**
 **Topics Covered:**
 - Resume writing and tailoring for QA roles.
 - Understanding job postings and matching skills.
