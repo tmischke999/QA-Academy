@@ -151,6 +151,7 @@ This six-month program provides comprehensive training in QA methodologies, tool
 - Develop a comprehensive test plan for a demo application.
 - Execute test cases covering accessibility, API, and UI testing.
 - Document findings in a professional test summary report.
+- Completed capstone project, including a test plan, executed test cases, and a final report.
 
 #### **Week 4: Career Preparation**
 **Topics Covered:**
@@ -159,7 +160,6 @@ This six-month program provides comprehensive training in QA methodologies, tool
 - Mock interviews and interview preparation.
 
 **Deliverables:**
-- Completed capstone project, including a test plan, executed test cases, and a final report.
 - Updated and tailored resumes for QA roles.
 - Participation in mock interview sessions with feedback provided.
 
