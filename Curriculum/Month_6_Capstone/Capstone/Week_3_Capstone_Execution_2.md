@@ -91,13 +91,13 @@ Finalize the capstone project with automation and performance testing.
             await page.selectOption("#dropdown", "2");
             const selectedOption = await page.locator("#dropdown option:checked").textContent();
             expect(selectedOption).toBe("Option 2");
-        });
-            await page.selectOption("#dropdown", "2");
-            const selectedOption = await page.locator("#dropdown option:checked").textContent();
-            expect(selectedOption).toBe("Option 2");
-        });
+            });
+                await page.selectOption("#dropdown", "2");
+                const selectedOption = await page.locator("#dropdown option:checked").textContent();
+                expect(selectedOption).toBe("Option 2");
+            });
          ```
-         
+
         - Example: Automate form submission:
          ```javascript
          test("Verify form submission", async ({ page }) => {
