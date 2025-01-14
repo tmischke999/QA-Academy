@@ -98,17 +98,17 @@ To supplement this training, students must explore the following resources to bu
   **Example Documentation for Part 2**
 
     ```plaintext
-      Test: Missing ARIA Labels
-      Issue: A button has no ARIA role or label.
-      Why it’s a problem: Screen readers cannot announce the purpose of the button.
-      WCAG Principle: Perceivable - Name, Role, Value (4.1.2).
-      Recommendation: Add an ARIA role of “button” and a label describing the button’s function.
-      
-      Test: Keyboard Navigation Failures
-      Issue: The dropdown menu cannot be accessed using the Tab key.
-      Why it’s a problem: Keyboard-only users cannot select options in the dropdown.
-      WCAG Principle: Operable - Keyboard Accessible (2.1.1).
-      Recommendation: Add keyboard focus support to all dropdown options.
+    Test: Missing ARIA Labels
+    Issue: A button has no ARIA role or label.
+    Why it’s a problem: Screen readers cannot announce the purpose of the button.
+    WCAG Principle: Perceivable - Name, Role, Value (4.1.2).
+    Recommendation: Add an ARIA role of “button” and a label describing the button’s function.
+    
+    Test: Keyboard Navigation Failures
+    Issue: The dropdown menu cannot be accessed using the Tab key.
+    Why it’s a problem: Keyboard-only users cannot select options in the dropdown.
+    WCAG Principle: Operable - Keyboard Accessible (2.1.1).
+    Recommendation: Add keyboard focus support to all dropdown options.
     ```
 
 #### **Part 3: Write Bug Reports**
