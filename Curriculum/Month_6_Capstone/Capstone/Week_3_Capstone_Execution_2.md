@@ -87,15 +87,15 @@ Finalize the capstone project with automation and performance testing.
        - Example: Automate dropdown interaction:
          ```javascript
          test("Validate dropdown functionality allows valid selections", async ({ page }) => {
-    await page.goto("https://the-internet.herokuapp.com/dropdown");
-    await page.selectOption("#dropdown", "2");
-    const selectedOption = await page.locator("#dropdown option:checked").textContent();
-    expect(selectedOption).toBe("Option 2");
-});
-    await page.selectOption("#dropdown", "2");
-    const selectedOption = await page.locator("#dropdown option:checked").textContent();
-    expect(selectedOption).toBe("Option 2");
-});
+            await page.goto("https://the-internet.herokuapp.com/dropdown");
+            await page.selectOption("#dropdown", "2");
+            const selectedOption = await page.locator("#dropdown option:checked").textContent();
+            expect(selectedOption).toBe("Option 2");
+        });
+            await page.selectOption("#dropdown", "2");
+            const selectedOption = await page.locator("#dropdown option:checked").textContent();
+            expect(selectedOption).toBe("Option 2");
+        });
          ```
        - Example: Automate form submission:
          ```javascript
@@ -212,9 +212,9 @@ Finalize the capstone project with automation and performance testing.
     ```plaintext
     | **Bug ID** | **Summary**                        | **Steps to Reproduce**                             | **Expected Result**       | **Actual Result**         | **Severity** | **Status**  |
 |------------|------------------------------------|---------------------------------------------------|---------------------------|---------------------------|--------------|-------------|
-| 001        | Error message not displayed       | Navigate to login page, enter invalid credentials | Error message displayed   | No error message displayed| High         | Open        |
-    Status: Open
-    ```
+    | 001        | Error message not displayed       | Navigate to login page, enter invalid credentials | Error message displayed   | No error message displayed| High         | Open        |
+        Status: Open
+        ```
 
 - Structure your report as follows:
   1. **Executive Summary**:
