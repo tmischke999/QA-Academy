@@ -97,7 +97,8 @@ Finalize the capstone project with automation and performance testing.
             expect(selectedOption).toBe("Option 2");
         });
          ```
-       - Example: Automate form submission:
+         
+        - Example: Automate form submission:
          ```javascript
          test("Verify form submission", async ({ page }) => {
              await page.goto("https://the-internet.herokuapp.com/login");
