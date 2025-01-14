@@ -60,28 +60,74 @@ To support this training, students must explore the following resources before e
 
 ### **Assignment**
 
-#### **Part 1: High Contrast Testing**
-
-- **Objective**: Evaluate the contrast of a webpage to ensure all content is readable for users with low vision.
+#### **Part 1: Understand High Contrast and Reflow Issues**
+- **Objective**: Learn how high contrast and reflow issues impact accessibility.
 - **Instructions**:
-  1. **Choose a public website**.
-  2. **Enable high contrast mode** on your device, following the guide from the Microsoft Support link.
-  3. **Navigate through the webpage**, focusing on readability, the visibility of buttons, form fields, and any other interactive elements.
-  4. Document at least **three issues** related to contrast, describing the potential accessibility barrier and suggesting ways to improve it.
+  1. Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+  2. Focus on the following examples:
+     - **Color Contrast Issues**: Understand how low contrast ratios affect readability.
+     - **Reflow Problems**: Explore issues where content does not adapt correctly to small or zoomed screens.
+  3. Write a short explanation (2-3 sentences) for each issue, describing:
+     - Why it is a problem for users with low vision or on mobile devices.
+     - Which WCAG principle is violated.
 
-#### **Part 2: Reflow Testing**
-
-- **Objective**: Assess the adaptability of web content when resized or viewed at higher zoom levels.
+#### **Part 2: Practice Testing High Contrast and Reflow**
+- **Objective**: Use examples from the **Accessibility Tool Audit** to understand how high contrast and reflow issues manifest in real-world scenarios.
 - **Instructions**:
-  1. Use **browser zoom** (up to 200% or higher) to test the same webpage from Part 1.
-  2. **Check all content**, ensuring that no horizontal scrolling is necessary, and that all key elements are accessible and properly formatted.
-  3. Document at least **two issues** related to reflow, such as overlapping text, hidden elements, or areas requiring horizontal scrolling.
+  1. **Review Specific Examples from the Accessibility Tool Audit**:
+     - Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+     - Focus on these examples:
+       - **Typography - Very Small Text Found**: Understand the challenges of small text sizes for readability.
+       - **Typography - Poor Contrast**: Explore examples of insufficient text contrast against backgrounds.
+       - **Content Reflow - Content Overflows Viewport**: Learn how content fails to adapt on zoomed or small screens.
+  2. **Test High Contrast and Reflow Scenarios**:
+     - **Test 1: Poor Contrast**:
+       - Use the example of poor contrast from the Accessibility Tool Audit.
+       - Verify contrast ratios using a tool like [Contrast Checker](https://webaim.org/resources/contrastchecker/).
+     - **Test 2: Reflow Problems**:
+       - Follow the example of content overflow from the Accessibility Tool Audit.
+       - Simulate zooming to 200% or resizing the browser to a small screen.
+  3. **Document Your Findings**:
+     - For each test, write down:
+       - The specific example you reviewed from the **Accessibility Tool Audit**.
+       - What issue did you identify?
+       - Why is it a problem for users with visual impairments or on small screens?
+       - Which WCAG principle does it violate?
+       - A recommendation for fixing the issue.
 
----
+#### **Part 3: Write Bug Reports**
+- **Objective**: Practice documenting high contrast and reflow issues.
+- **Instructions**:
+  1. Choose **two issues** from your findings in **Part 2**.
+  2. Write a bug report for each issue using this format:
+     ```plaintext
+     Title: [Describe the issue concisely]
+     Steps to Reproduce:
+       1. Open the test case or page with the issue.
+       2. [Describe the exact interaction that caused the issue].
+     Expected Result: [Describe what should happen].
+     Actual Result: [Describe what happens instead].
+     WCAG Reference: [Provide the relevant WCAG guideline, e.g., Perceivable - Contrast Minimum (1.4.3)].
+     Recommendation: [Suggest a fix for the issue].
+     ```
+     - Example:
+       ```plaintext
+       Title: Text has insufficient contrast against background
+       Steps to Reproduce:
+         1. Navigate to the homepage.
+         2. Identify the text in the footer section.
+       Expected Result: Text should have a contrast ratio of at least 4.5:1.
+       Actual Result: Text has a contrast ratio of 2.8:1, making it hard to read.
+       WCAG Reference: Perceivable - Contrast Minimum (1.4.3).
+       Recommendation: Adjust text and background colors to achieve a 4.5:1 contrast ratio.
+       ```
 
-### **Submission Instructions**
-
-- **How to Submit**: Upload your findings (in a Google Doc format) to the designated Slack channel. Ensure that sharing settings allow "Anyone with the link" to view.
+#### **Submission Instructions**
+- Submit all work in a **Google Doc**:
+  1. Include your summary from **Part 1**.
+  2. Add your bug reports for **Part 3**.
+  3. Document your findings from **Part 2**.
+- Share the Google Doc link in the designated Slack channel.
 
 ---
 
