@@ -46,15 +46,15 @@ Finalize the capstone project with automation and performance testing.
      - Example:
        ```javascript
        pm.test("Validate user details endpoint returns correct response", function () {
-    pm.response.to.have.status(200);
-    const jsonData = pm.response.json();
-    pm.expect(jsonData).to.have.property('userId');
-    pm.expect(jsonData.userId).to.equal(123);
-});
-    const jsonData = pm.response.json();
-    pm.expect(jsonData).to.have.property('userId');
-    pm.expect(jsonData.userId).to.equal(123);
-});
+                pm.response.to.have.status(200);
+                const jsonData = pm.response.json();
+                pm.expect(jsonData).to.have.property('userId');
+                pm.expect(jsonData.userId).to.equal(123);
+            });
+            const jsonData = pm.response.json();
+            pm.expect(jsonData).to.have.property('userId');
+            pm.expect(jsonData.userId).to.equal(123);
+        });
        ```
    - **Document Expectations**:
      - Save test results, including response payloads and logs.
@@ -65,12 +65,12 @@ Finalize the capstone project with automation and performance testing.
      - Example:
        ```javascript
        pm.test("Validating user details endpoint", function () {
-    pm.response.to.have.status(200);
-    const jsonData = pm.response.json();
-    pm.expect(jsonData).to.have.property('userId');
-    pm.expect(jsonData.userId).to.equal(123);
-});
-       });
+            pm.response.to.have.status(200);
+            const jsonData = pm.response.json();
+            pm.expect(jsonData).to.have.property('userId');
+            pm.expect(jsonData.userId).to.equal(123);
+        });
+            });
        ```
    - Document test results, including screenshots and logs.
 
