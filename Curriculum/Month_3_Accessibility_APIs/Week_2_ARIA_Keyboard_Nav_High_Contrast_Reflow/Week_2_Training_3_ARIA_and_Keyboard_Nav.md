@@ -57,27 +57,95 @@ To supplement this training, students must explore the following resources to bu
 
 ### **Assignment**
 
-#### **Part 1: Implement ARIA Roles**
-- **Objective**: Apply ARIA roles to improve the accessibility of a sample HTML document.
+#### **Part 1: Understand ARIA and Keyboard Navigation Issues**
+- **Objective**: Learn about common ARIA-related issues and barriers to keyboard navigation.
 - **Instructions**:
-  1. **Download the sample HTML file** provided in the Slack channel.
-  2. **Add ARIA roles** where appropriate to enhance the accessibility of the document (e.g., add `role="button"` to interactive elements that lack semantic tags).
-  3. **Test your implementation** using NVDA to ensure that the roles are correctly recognized.
-- **Specific Task**: Submit your modified HTML file along with a short write-up explaining the ARIA roles you added and why.
+  1. Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+  2. Focus on these examples:
+     - **Missing ARIA Labels**: Understand how missing or incorrect ARIA roles affect accessibility.
+     - **Keyboard Navigation Failures**: Explore examples where interactive elements (e.g., buttons or links) are not accessible using a keyboard.
+  3. Write a short explanation (2-3 sentences) for each issue, describing:
+     - Why it is a problem for users relying on ARIA and keyboard navigation.
+     - Which WCAG principle is violated.
 
-#### **Part 2: ARIA and Keyboard Navigation Testing with Screen Readers**
-- **Objective**: Evaluate the effectiveness of ARIA roles and keyboard navigation by navigating a webpage with a screen reader.
+#### **Part 2: Practice ARIA and Keyboard Testing**
+- **Objective**: Conduct hands-on testing to identify ARIA and keyboard navigation issues.
 - **Instructions**:
-  1. **Choose a public website** that uses ARIA roles (e.g., an e-commerce site with dynamic content).
-  2. **Use NVDA** to navigate through the page, focusing on how ARIA roles are announced and how well the keyboard navigation works.
-  3. Identify any areas where ARIA roles improve accessibility and any where they might be used incorrectly.
-  4. Document the **keyboard navigation flow** to identify focus issues or traps.
-- **Specific Task**: Document at least three instances where ARIA roles enhanced accessibility and one instance of incorrect usage, along with suggestions for improvement. Additionally, report any keyboard navigation issues found and how they could be resolved.
+  1. **Review the Accessibility Tool Audit**:
+     - Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+     - Focus on these examples:
+       - **Missing ARIA Labels**: Learn why ARIA labels are critical for screen reader users.
+       - **Keyboard Navigation Failures**: Explore examples where interactive elements are inaccessible via keyboard.
+  2. **Set Up Testing Environment**:
+     - Install a browser extension for inspecting ARIA roles (e.g., [Chrome Accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-to/)).
+     - Familiarize yourself with using the **Tab** key to navigate web pages.
+  3. **Perform the Following Tests**:
+     - **Test 1: Missing ARIA Labels**:
+       - Identify a button or interactive element that lacks an ARIA role or label.
+       - Use your ARIA inspection tool to confirm the absence of ARIA attributes.
+       - Note what happens when a screen reader encounters this element.
+     - **Test 2: Keyboard Navigation Failures**:
+       - Focus on testing dropdowns, modals, or buttons.
+       - Attempt to navigate these elements using the **Tab** key only.
+       - Identify any elements that cannot be accessed or lose focus unexpectedly.
+  4. **Document Your Findings**:
+     - For each test, write down:
+       - The issue you identified.
+       - Why it is a problem for users.
+       - Which WCAG principle is violated.
+       - A recommendation for fixing the issue.
 
----
+  **Example Documentation for Part 2**
 
-### **Submission Instructions**
-- **How to Submit**: Upload your modified HTML file and Google Doc write-up to the designated Slack channel. Ensure sharing settings allow "Anyone with the link" to view.
+      ```plaintext
+      Test: Missing ARIA Labels
+      Issue: A button has no ARIA role or label.
+      Why it’s a problem: Screen readers cannot announce the purpose of the button.
+      WCAG Principle: Perceivable - Name, Role, Value (4.1.2).
+      Recommendation: Add an ARIA role of “button” and a label describing the button’s function.
+      ```
+
+      ```plaintext
+      Test: Keyboard Navigation Failures
+      Issue: The dropdown menu cannot be accessed using the Tab key.
+      Why it’s a problem: Keyboard-only users cannot select options in the dropdown.
+      WCAG Principle: Operable - Keyboard Accessible (2.1.1).
+      Recommendation: Add keyboard focus support to all dropdown options.
+      ```
+
+#### **Part 3: Write Bug Reports**
+- **Objective**: Practice documenting ARIA and keyboard navigation issues.
+- **Instructions**:
+  1. Choose **two issues** from your findings in **Part 2**.
+  2. Write a bug report for each issue using this format:
+     ```plaintext
+     Title: [Describe the issue concisely]
+     Steps to Reproduce:
+       1. Open [specific page or example from the Accessibility Tool Audit].
+       2. [Describe the exact interaction that caused the issue].
+     Expected Result: [Describe what should happen].
+     Actual Result: [Describe what happens instead].
+     WCAG Reference: [Provide the relevant WCAG guideline, e.g., Operable - Keyboard Accessible (2.1.1)].
+     Recommendation: [Suggest a fix for the issue].
+     ```
+     - Example:
+       ```plaintext
+       Title: Keyboard navigation skips modal dialog
+       Steps to Reproduce:
+         1. Open the modal dialog example on the Accessibility Tool Audit website.
+         2. Use the Tab key to navigate through the modal.
+       Expected Result: All interactive elements within the modal are focusable using the keyboard.
+       Actual Result: Keyboard navigation skips some buttons inside the modal.
+       WCAG Reference: Operable - Keyboard Accessible (2.1.1).
+       Recommendation: Ensure all interactive elements within the modal have proper focus management.
+       ```
+
+#### **Submission Instructions**
+- Submit all work in a **Google Doc**:
+  1. Include your summary from **Part 1**.
+  2. Add your bug reports for **Part 3**.
+  3. Document your findings from **Part 2**.
+- Share the Google Doc link in the designated Slack channel.
 
 ---
 
