@@ -2,7 +2,7 @@
 
 ## **Objective**
 
-Finalize the capstone project with automation and performance testing.
+Finalize the capstone project by applying advanced testing techniques, including automation and performance testing. Students will execute API and UI automation scripts based on their test plan, analyze performance metrics, and compile results into a comprehensive test summary report. This phase emphasizes integrating multiple testing methods to simulate real-world QA workflows and prepare deliverables suitable for portfolio presentation.
 
 ---
 
