@@ -211,7 +211,6 @@ Finalize the capstone project with automation and performance testing.
     - **Assignee**: The person responsible for addressing the bug.
   - Example Bug Log:
     ```plaintext
-
         | **Bug ID** | **Summary**                  | **Steps to Reproduce**                        | **Expected Result**      | **Actual Result**         | **Severity** | **Status**  |
         |------------|------------------------------|-----------------------------------------------|--------------------------|---------------------------|--------------|-------------|
         | 001        | Error message not displayed | Navigate to login page, enter invalid credentials | Error message displayed | No error message displayed | High         | Open        |
