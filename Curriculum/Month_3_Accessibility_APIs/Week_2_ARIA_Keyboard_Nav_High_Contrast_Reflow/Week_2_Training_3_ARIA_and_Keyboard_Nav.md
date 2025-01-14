@@ -97,7 +97,7 @@ To supplement this training, students must explore the following resources to bu
 
   **Example Documentation for Part 2**
 
-      ```plaintext
+    ```plaintext
       Test: Missing ARIA Labels
       Issue: A button has no ARIA role or label.
       Why it’s a problem: Screen readers cannot announce the purpose of the button.
@@ -109,7 +109,7 @@ To supplement this training, students must explore the following resources to bu
       Why it’s a problem: Keyboard-only users cannot select options in the dropdown.
       WCAG Principle: Operable - Keyboard Accessible (2.1.1).
       Recommendation: Add keyboard focus support to all dropdown options.
-      ```
+    ```
 
 #### **Part 3: Write Bug Reports**
 - **Objective**: Practice documenting ARIA and keyboard navigation issues.
