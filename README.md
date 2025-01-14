@@ -35,16 +35,14 @@ This repository is designed to support instructors, students, and self-learners 
 ## **Repository Structure**
 The repository is divided into monthly modules, each focusing on a specific area of QA:
 
-```
-QA_Academy/
-├── README.md
-├── Syllabus_for_QA_Academy_Program.pdf
-├── Month_1_Foundations/
-├── Month_2_QA_Fundamentals/
-├── Month_3_Accessibility/
-├── Month_4_API_Testing/
-├── Month_5_Advanced_Topics/
-├── Month_6_Capstone/
+```plaintext
+### Monthly Focus
+- **Month 1:** Foundational Concepts and Tool Setup
+- **Month 2:** Manual Testing Fundamentals
+- **Month 3:** Accessibility and API Testing
+- **Month 4:** Advanced API Testing and Automation
+- **Month 5:** Performance, Exploratory, and UI Automation
+- **Month 6:** Capstone Project and Career Preparation
 ```
 
 - **README:** Overview of the repository and usage instructions.
@@ -59,10 +57,12 @@ Below is a list of tools and resources used throughout the QA Academy Program. F
 
 ### **QA Tools:**
 - [Jira](https://www.atlassian.com/software/jira): For bug tracking and test management.
-- [Postman](https://www.postman.com/): For API testing.
 - [VS Code](https://code.visualstudio.com/): A lightweight text editor for script writing.
 - [Axe Accessibility Tool](https://www.deque.com/axe/): For accessibility testing.
 - [NVDA Screen Reader](https://www.nvaccess.org/): For screen reader testing.
+- [Postman](https://www.postman.com/): For API testing.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse): For performance testing.
+- [Playwright](https://playwright.dev/): For UI automation testing.
 
 ### **Version Control:**
 - [Git](https://git-scm.com/): Version control system.
