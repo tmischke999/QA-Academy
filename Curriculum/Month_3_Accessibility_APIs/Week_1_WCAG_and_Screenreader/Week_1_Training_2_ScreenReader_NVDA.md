@@ -53,27 +53,67 @@ To supplement this training, students must explore the following resources to bu
 
 ### **Assignment**
 
-#### **Part 1: Practice Using NVDA**
-- **Objective**: Familiarize yourself with NVDA by using it to navigate a sample webpage.
+#### **Part 1: Understand Screen Reader Testing**
+- **Objective**: Learn how screen readers like NVDA interact with websites and identify potential accessibility issues.
 - **Instructions**:
-  1. **Download and install NVDA** from the provided link.
-  2. **Open a sample webpage** (e.g., [BBC News](https://www.bbc.com/)) and use NVDA to explore the content.
-  3. **Navigate through headings, links, and forms**, taking note of how NVDA announces different elements.
-- **Specific Task**: Write a summary of your experience, including any challenges you faced and areas where the website was either accessible or inaccessible.
+  1. Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+  2. Focus on the **"Screen Reader Behavior"** examples, such as:
+     - Missing or incorrect ARIA labels.
+     - Non-descriptive link text (e.g., "Click here").
+  3. Write a short explanation (2-3 sentences) of why these issues affect screen reader users and how they violate accessibility standards.
 
-#### **Part 2: Keyboard Navigation Test**
-- **Objective**: Assess a website for keyboard accessibility.
+#### **Part 2: Practice Testing with NVDA**
+- **Objective**: Understand common accessibility barriers and test how screen readers handle these scenarios.
 - **Instructions**:
-  1. **Choose a public website** (e.g., a news site or blog).
-  2. **Use only your keyboard** to navigate through the entire website.
-  3. Pay close attention to how the **Tab** key moves between links, buttons, and form fields.
-  4. Identify any areas where focus is lost, elements are skipped, or the navigation order is confusing.
-- **Specific Task**: Document at least three navigation issues you encounter, describing the problem and suggesting an improvement based on WCAG guidelines.
+  1. Visit the [Accessibility Tool Audit](https://alphagov.github.io/accessibility-tool-audit/test-cases.html).
+  2. Focus on the following examples:
+     - **Non-Descriptive Links**: Links with generic text like "Click here" or "Read more."
+     - **Missing or Incorrect ARIA Labels**: Form elements or buttons missing ARIA roles or attributes.
+     - **Empty or Missing Alternative Text**: Images lacking alt text or with meaningless alt text.
+     - **Empty Paragraphs**: HTML elements with unnecessary or empty paragraph tags.
+     - **Color Contrast Issues**: Text with low contrast against its background, impacting readability.
+  3. Use NVDA to simulate these issues:
+     - Review the examples on the **Accessibility Tool Audit** site.
+     - Test how NVDA interacts with similar elements on any available website or sandbox environment.
+  4. Document findings for **two issues**, including:
+     - What issue did you identify from the Accessibility Tool Audit?
+     - Why is it a problem for screen reader users?
+     - Which WCAG principle does it violate?
+     - What recommendation would you provide?
 
----
+#### **Part 3: Write Bug Reports**
+- **Objective**: Practice documenting screen reader accessibility issues.
+- **Instructions**:
+  1. Choose **two issues** from your findings in **Part 2**.
+  2. Write a bug report for each issue using this format:
+     ```plaintext
+     Title: [Describe the issue concisely]
+     Steps to Reproduce:
+       1. Open the test case on the Accessibility Tool Audit website.
+       2. [Describe the exact interaction that caused the issue].
+     Expected Result: [Describe what the screen reader should announce].
+     Actual Result: [Describe what the screen reader actually announced].
+     WCAG Reference: [Provide the relevant WCAG guideline, e.g., Perceivable - Name, Role, Value (4.1.2)].
+     Recommendation: [Suggest a fix for the issue].
+     ```
+     - Example:
+       ```plaintext
+       Title: Screen reader does not announce dropdown options
+       Steps to Reproduce:
+         1. Navigate to the "Missing ARIA Labels" example on the Accessibility Tool Audit website.
+         2. Use NVDA to navigate through the example dropdown options.
+       Expected Result: NVDA should announce each dropdown option's text.
+       Actual Result: NVDA does not announce any options.
+       WCAG Reference: Perceivable - Name, Role, Value (4.1.2).
+       Recommendation: Add ARIA roles and labels to each dropdown option.
+       ```
 
-### **Submission Instructions**
-- **How to Submit**: Compile your findings into a Google Doc and share the link in the designated Slack channel for feedback. Ensure sharing settings allow "Anyone with the link" to view.
+#### **Submission Instructions**
+- Submit all work in a **Google Doc**:
+  1. Include your summary from **Part 1**.
+  2. Document your findings from **Part 2**.
+  3. Add your bug reports for **Part 3**.
+- Share the Google Doc link in the designated Slack channel.
 
 ---
 
