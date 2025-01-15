@@ -1,7 +1,6 @@
 # **Training 5: Setting Up and Running Initial Playwright Tests**
 
 ## **Objective**
-
 Introduce Playwright by guiding students through the installation and configuration of the framework, running initial tests, and integrating their projects with GitHub. By the end of this training, students will:
 
 - Understand the purpose and key features of Playwright.
@@ -14,18 +13,20 @@ Introduce Playwright by guiding students through the installation and configurat
 ## **Free Online Resources (Mandatory)**
 
 1. **[TypeScript vs JavaScript (YouTube)](https://www.youtube.com/watch?v=HCXPJmtV47I)**
+   - Learn the key differences between TypeScript and JavaScript and why TypeScript is commonly used in Playwright projects.
 2. **[Learn TypeScript - Full Course for Beginners (YouTube)](https://www.youtube.com/watch?v=SpwzRDUQ1GI)**
+   - A beginner-friendly video that provides a complete introduction to TypeScript for those new to programming or transitioning from JavaScript.
 3. **[Playwright Official Documentation](https://playwright.dev/)**
-   - Comprehensive guide to getting started with Playwright.
+   - Comprehensive guide for setting up and using Playwright, including tutorials for writing tests and advanced configuration options.
    - [Writing Playwright tests](https://playwright.dev/docs/writing-tests)
-2. **[GitHub Docs: Creating a Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)**
-   - Instructions for creating and managing GitHub repositories.
-3. **[What is Playwright? (YouTube)](https://www.youtube.com/watch?v=wGr5rz8WGCE)**
-   - Beginner-friendly video introducing Playwright's features and demos.
-5. **[Getting Started with Playwright Testing](https://saucelabs.com/resources/blog/getting-started-with-playwright-testing)**
-   - A blog article providing step-by-step guidance on using Playwright effectively.
-6. **[Playwright Testing Essentials: A Beginner's Guide](https://betterstack.com/community/guides/testing/playwright-intro/)**
-   - A comprehensive guide for beginners to understand Playwright testing.
+4. **[GitHub Docs: Creating a Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)**
+   - Step-by-step instructions for creating and managing repositories to organize your Playwright projects.
+5. **[What is Playwright? (YouTube)](https://www.youtube.com/watch?v=wGr5rz8WGCE)**
+   - Beginner-friendly introduction to Playwright’s features, including an overview of its capabilities for UI automation testing.
+6. **[Getting Started with Playwright Testing](https://saucelabs.com/resources/blog/getting-started-with-playwright-testing)**
+   - A blog post detailing how to set up and run Playwright tests effectively for both beginners and advanced users.
+7. **[Playwright Testing Essentials: A Beginner's Guide](https://betterstack.com/community/guides/testing/playwright-intro/)**
+   - A detailed guide for beginners covering the fundamentals of Playwright testing, including installation, writing tests, and debugging.
 
 ---
 
@@ -57,14 +58,6 @@ Introduce Playwright by guiding students through the installation and configurat
   - Simulating user interactions in real-world scenarios.
 
 **Key Insight**: Playwright is ideal for modern QA workflows, offering comprehensive tools to test applications efficiently and effectively.
-
-- **Definition**: Playwright is a framework for end-to-end testing, enabling automated browser interactions.
-- **Key Features**:
-  - Cross-browser testing for Chromium, Firefox, and WebKit.
-  - Supports parallel and headless execution.
-  - Easy debugging with built-in tools.
-
-**Key Insight**: Playwright is ideal for modern web applications, offering robust automation capabilities for QA professionals.
 
 ---
 
@@ -276,7 +269,7 @@ cd path/to/QA-Academy-folder
 1. **Stage and Commit Your Work via VS Code Source Control**:
 
    - Open the **Source Control** tab in VS Code (icon with three branches or press `Ctrl + Shift + G` / `Cmd + Shift + G`).
-     - It is the branch icon on your left nav in VS Code. 
+     - It is the branch icon on your left nav in VS Code. 
    - Enter a commit message in the text box (e.g., "Initial Playwright setup and default test execution").
    - Click the **plus icon** to stage a single change or stage all changes
    - Click the **checkmark icon** or **Commit button** to commit your changes.
