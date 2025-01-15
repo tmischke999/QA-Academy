@@ -283,7 +283,7 @@ cd path/to/QA-Academy-folder
 
 2. **Push Your Changes via VS Code**:
 
-   - After committing, click the **... menu** in the Source Control tab and select **Push**.
+   - After committing, click the **Sync Changes button** in the Source Control tab.
    - Verify that your changes are pushed to your GitHub repository.
 
 3. **Stage, Commit, and Push via Command Line** (alternative):
