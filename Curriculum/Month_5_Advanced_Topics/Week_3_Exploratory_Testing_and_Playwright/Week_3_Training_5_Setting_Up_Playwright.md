@@ -279,7 +279,7 @@ cd path/to/QA-Academy-folder
      - It is the branch icon on your left nav in VS Code. 
    - Enter a commit message in the text box (e.g., "Initial Playwright setup and default test execution").
    - Click the **plus icon** to stage a single change or stage all changes
-   - Click the **checkmark icon** to commit your changes.
+   - Click the **checkmark icon** or **Commit button** to commit your changes.
 
 2. **Push Your Changes via VS Code**:
 
