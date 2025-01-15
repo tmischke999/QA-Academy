@@ -1,21 +1,31 @@
- # **Training 6: Writing Basic Playwright Tests**
+# **Training 6: Writing and Structuring Basic Playwright Tests**
 
 ## **Objective**
 
-Teach students how to write and execute basic Playwright tests, including interacting with UI elements, validating outcomes using assertions, and debugging tests. This session will also introduce best practices for deciding when to create automated test cases versus using manual testing.
+Provide students with a structured approach to testing with Playwright. This training will teach how to write and structure Playwright tests effectively, what to test, what not to test, and best practices for organizing test files and debugging. By the end of this training, students will:
+
+- Understand how to write basic Playwright tests.
+- Learn best practices for structuring test folders and files.
+- Identify appropriate test cases for automation.
+- Gain foundational debugging skills in Playwright.
 
 ---
 
-## **Free Online Resources** (Mandatory)
+## **Free Online Resources (Mandatory)**
 
 1. **[Playwright Official Documentation](https://playwright.dev/docs/intro)**
-   - Comprehensive guide for writing and executing Playwright tests.
-2. **[The Internet - Test Application](https://the-internet.herokuapp.com)**
-   - A demo web application for practicing test scenarios.
-3. **[What is Playwright? (YouTube)](https://www.youtube.com/watch?v=wGr5rz8WGCE)**
-   - Beginner-friendly video on Playwright introduction tutorial, features & demo.
-4. **[Introduction to Playwright for End-to-End Testing with Debbie O'Brien | JS Drops (YouTube)](https://www.youtube.com/watch?v=lCb9JoZFpHI)**
-   - Learn how to get started with Playwright using the VS Code extension and easily generate tests with Playwright`s test generator.
+   - A comprehensive guide for writing and organizing Playwright tests.
+   - [Writing Playwright Tests](https://playwright.dev/docs/writing-tests)
+2. **[Best Practices for Playwright](https://playwright.dev/docs/best-practices)**
+   - Best practices for structuring test folders and files.
+3. **[Debugging Tests with Playwright](https://playwright.dev/docs/debug)**
+   - A guide to using Playwright's debugging tools effectively.
+4. **[The Internet - Test Application](https://the-internet.herokuapp.com)**
+   - A demo application to practice various test scenarios.
+5. **[Playwright Assertions Guide](https://playwright.dev/docs/assertions)**
+   - Detailed documentation on using assertions in Playwright.
+6. **[How to Organize Your Test Project (YouTube)](https://www.youtube.com/watch?v=2E-h-cdHjEQ)**
+   - A video tutorial on structuring a Playwright project.
 
 ---
 
@@ -23,220 +33,408 @@ Teach students how to write and execute basic Playwright tests, including intera
 
 ### **1. Writing Basic Playwright Tests**
 
-#### **Step 1: Setting Up a New Test File**
+#### **Step 1: Key Components of a Playwright Test**
 
-1. Open your Playwright project in VS Code.
-2. Navigate to the `tests/` folder. This is where all test files are stored.
-3. Create a new test file named `test-site.spec.ts`. This file will contain the custom tests you write.
+- **Test Description**: Use meaningful names for test cases.
+- **Page Navigation**: Ensure the page is fully loaded before performing actions.
+- **Assertions**: Verify outcomes using clear and specific assertions.
 
-#### **Step 2: Writing and Understanding Tests**
+#### **Step 2: Writing Simple Tests**
 
-Let’s break down the process of writing basic Playwright tests step by step:
+- Start with simple functionality like navigation and text validation:
+  ```typescript
+  import { test, expect } from '@playwright/test';
 
-1. **Import Playwright**:
+  test('Verify Example Page Title', async ({ page }) => {
+      await page.goto('https://example.com');
+      const title = await page.title();
+      expect(title).toBe('Example Domain');
+  });
+  ```
 
-   ```typescript
-   import { test, expect } from '@playwright/test';
+#### **Step 3: Adding More Assertions**
+
+- Validate element visibility and content:
+  ```typescript
+  const header = await page.locator('h1');
+  await expect(header).toBeVisible();
+  const paragraph = await page.locator('p');
+  await expect(paragraph).toContainText('Example Domain');
+  ```
+
+---
+
+### **2. Structuring Playwright Test Projects**
+
+#### **Step 1: Folder Organization**
+
+1. Use a clear and consistent structure:
+
+   ```
+   tests/
+     ├── login/
+     │   ├── valid_login.spec.ts
+     │   └── invalid_login.spec.ts
+     ├── navigation/
+     │   └── homepage_navigation.spec.ts
+     └── utils/
+         └── helpers.ts
    ```
 
-   - `test`: Defines a test case with a name and its steps.
-   - `expect`: Provides assertions to validate application behavior.
+2. **Best Practices**:
 
-2. **Write a Valid Login Test**:
+   - Group tests by functionality or feature.
+   - Use a `utils/` folder for reusable code (e.g., helper functions).
 
+#### **Step 2: Configuration File**
+
+1. Update `playwright.config.ts` for organization and performance:
    ```typescript
-   test('Login with valid credentials', async ({ page }) => {
-       await page.goto('https://the-internet.herokuapp.com/login');
-       await page.fill('#username', 'tomsmith');
-       await page.fill('#password', 'SuperSecretPassword!');
-       await page.click('button[type="submit"]');
-       await expect(page.locator('#flash')).toContainText('You logged into a secure area!');
+   import { defineConfig } from '@playwright/test';
+
+   export default defineConfig({
+       testDir: './tests',
+       retries: 1,
+       use: {
+           headless: true,
+           baseURL: 'https://example.com',
+           actionTimeout: 10000,
+           viewport: { width: 1280, height: 720 },
+       },
    });
    ```
 
-   - **What it does**:
-     - Navigates to the login page.
-     - Inputs valid credentials.
-     - Submits the form and checks for a success message.
+---
 
-3. **Write an Invalid Login Test**:
+### **3. What to Test and What Not to Test**
 
-   ```typescript
-   test('Login with invalid credentials', async ({ page }) => {
-       await page.goto('https://the-internet.herokuapp.com/login');
-       await page.fill('#username', 'invaliduser');
-       await page.fill('#password', 'wrongpassword');
-       await page.click('button[type="submit"]');
-       await expect(page.locator('#flash')).toContainText('Your username is invalid!');
-   });
-   ```
+#### **Step 1: What to Test**
 
-   - **What it does**:
-     - Navigates to the login page.
-     - Inputs invalid credentials.
-     - Submits the form and verifies an error message.
+1. **Critical User Flows**:
 
-4. **Run the Tests**:
+   - Login workflows (both valid and invalid credentials).
+   - Checkout processes for e-commerce platforms.
+   - Form submissions (e.g., contact forms or sign-ups).
 
-   - Open the terminal in VS Code (`Ctrl + ~` or `Cmd + ~`).
-   - Execute the command:
+2. **Repetitive and High-Risk Areas**:
+
+   - Regression testing: Ensuring recent code changes haven’t introduced new bugs.
+   - Critical application workflows that must function reliably.
+
+3. **Cross-Browser and Device Compatibility**:
+
+   - Tests to ensure functionality across different browsers (e.g., Chrome, Firefox, Safari).
+   - Testing responsiveness on desktop, tablet, and mobile devices.
+
+4. **Performance-Impacting Features**:
+
+   - Validating loading times for key pages or interactions.
+   - Ensuring large datasets are processed or rendered correctly.
+
+#### **Step 2: What Not to Test**
+
+1. **Non-Deterministic Behavior**:
+
+   - Animations or transitions that are difficult to verify programmatically.
+   - Randomized content (e.g., advertisements).
+
+2. **Visual and Aesthetic Changes**:
+
+   - Exact pixel-perfect alignments (best handled by visual regression tools).
+   - Testing colors or font changes unless tied to accessibility.
+
+3. **Rapidly Changing Features**:
+
+   - Elements undergoing frequent UI updates.
+   - Experimental features that are still in early development.
+
+4. **Low-Risk Areas**:
+
+   - Static pages with no user interaction.
+   - Rarely used edge-case scenarios unless critical to functionality.
+
+**Key Insight**: Focus on high-impact, stable areas where automated testing will provide the most value, and leave aesthetic or experimental testing for manual or specialized tools.
+
+---
+
+### **4. Debugging Playwright Tests**
+
+#### **Step 1: Debugging Tools**
+
+1. **Inspector Mode**:
+
+   - Run tests in debug mode to open the Playwright Inspector and step through each action interactively:
      ```bash
-     npx playwright test
+     npx playwright test --debug
      ```
-   - Review the output for:
-     - **Pass/Fail Results**: Indicates which tests succeeded or failed.
-     - **Error Messages**: Details of any issues encountered.
-     - **Summary**: Total tests run and their statuses.
+   - The Inspector allows you to pause, step over actions, and view logs for each step in real-time.
 
----
+2. **Pause for Inspection**:
 
-### **2. When to Create Automated Test Cases**
-
-1. **Scenarios for Automation**:
-
-   - Repetitive tests: Useful for tasks that need frequent execution (e.g., login validation).
-   - High-risk areas: Tests for critical application workflows.
-   - Large datasets: Tests that involve multiple input variations.
-   - Cross-browser compatibility: Ensuring functionality across multiple browsers.
-
-2. **Scenarios for Manual Testing**:
-
-   - Exploratory testing: When the focus is on discovering new issues.
-   - Visual testing: Validating UI alignment or design consistency.
-   - One-off scenarios: Features that don’t require repeated testing.
-
----
-
-### **3. Debugging and Reporting**
-
-#### **Debugging Tools**
-
-1. **Scenario for Debugging**: Imagine a test fails because the "Login with valid credentials" test does not find the success message `You logged into a secure area!`. Here’s how to debug it step by step:
-
-   - Add a `page.pause()` command right after navigating to the login page to observe what the browser is doing:
+   - Insert pauses into your test script to interact with the page manually:
      ```typescript
-     test('Debugging login failure', async ({ page }) => {
+     await page.pause();
+     ```
+   - Useful for visually verifying the page state at a specific point in the test.
+
+3. **Capture Screenshots for Failing Tests**:
+
+   - Use screenshots to understand failures visually:
+     ```typescript
+     await page.screenshot({ path: 'error.png' });
+     ```
+   - Save all failure screenshots in a dedicated folder (e.g., `screenshots/`) for organized debugging.
+
+#### **Step 2: Using Trace Viewer**
+
+1. **Enable Tracing**:
+
+   - Enable trace recording to capture the entire test execution:
+     ```typescript
+     await context.tracing.start({ snapshots: true, screenshots: true });
+     await page.goto('https://example.com');
+     await context.tracing.stop({ path: 'trace.zip' });
+     ```
+   - The trace file provides detailed insights into all actions, including element locators, network requests, and timing data.
+
+2. **Review Traces**:
+
+   - Open the trace file using the Playwright Trace Viewer:
+     ```bash
+     npx playwright show-trace trace.zip
+     ```
+   - Inspect each step in the test, view screenshots, and analyze logs for failures.
+
+#### **Step 3: Leveraging Logs and Debugging Outputs**
+
+1. **Console Logs**:
+
+   - Add `console.log` statements to track variable values or actions:
+     ```typescript
+     console.log('Current URL:', await page.url());
+     ```
+   - Review terminal output during test execution for additional context.
+
+2. **Network and Request Logs**:
+
+   - Monitor network requests to ensure proper API calls and responses:
+     ```typescript
+     page.on('response', response => console.log(`Response: ${response.url()} -> ${response.status()}`));
+     ```
+
+3. **Playwright Debug Mode with VS Code**:
+
+   - Use VS Code’s built-in debugger with Playwright by configuring a `launch.json` file. This allows breakpoint-based debugging for seamless troubleshooting.
+
+#### **Step 4: Common Debugging Scenarios**
+
+1. **Element Not Found**:
+
+   - Check if the selector is correct by inspecting the DOM.
+   - Use Playwright’s `page.locator()` to validate the element’s visibility or existence:
+     ```typescript
+     await expect(page.locator('selector')).toBeVisible();
+     ```
+
+2. **Timeout Errors**:
+
+   - Increase the timeout for actions to account for slower network or rendering times:
+     ```typescript
+     await page.waitForSelector('selector', { timeout: 10000 });
+     ```
+
+3. **Flaky Tests**:
+
+   - Use retries to re-run failing tests automatically:
+     ```typescript
+     test('Flaky Test', async ({ page }) => {
+         await page.goto('https://example.com');
+         // Add retry logic
+     }, { retries: 2 });
+     ```
+
+**Key Insight**: Debugging is an iterative process. Combine tools like Inspector, logs, and trace viewer to pinpoint issues efficiently.
+
+---
+
+## **Assignment**
+
+### **Step-by-Step Instructions**
+
+#### **Step 1: Setting Up the Project**
+
+1. **Prepare Folder Structure**:
+   - Navigate to your project folder.
+   - Create a new folder `tests/login` to store test scripts.
+2. **Add New Test Files**:
+   - Create two files inside `tests/login/`:
+     - `valid_login.spec.ts`
+     - `invalid_login.spec.ts`
+
+#### **Step 2: Writing Tests**
+
+1. **Create Tests for Common Scenarios**:
+
+   - Write tests for the following scenarios using the [The Internet - Test Application](https://the-internet.herokuapp.com):
+     - **Valid Login Test**:
+       - Test the Basic Auth functionality at [Basic Auth](https://the-internet.herokuapp.com/login) to validate proper credentials are required to access a secured page. Test successful login using valid credentials (`tomsmith` and `SuperSecretPassword!`).
+     - **Invalid Login Test**:
+       - Test invalid login attempts at [Login Page](https://the-internet.herokuapp.com/login) by entering incorrect username and password combinations to ensure proper error messages are displayed. Test invalid login by entering incorrect username and password combinations.
+     - **Dropdown Interaction Test**:
+       - Test the Dropdown functionality at [Dropdown Page](https://the-internet.herokuapp.com/dropdown) by selecting `Option 1` and ensuring the selected value displays correctly.
+       - Validate dropdown menu selection by selecting `Option 1` and ensuring it displays correctly.
+     - **Checkbox Selection Test**:
+       - Test the Checkbox functionality at [Checkbox Page](https://the-internet.herokuapp.com/checkboxes) by selecting and unselecting each checkbox and validating their states. Test checking and unchecking both checkboxes and validate their state.
+     - **Add/Remove Elements Test**:
+       - Test the Add/Remove Elements functionality at [Dynamic Controls Page](https://the-internet.herokuapp.com/dynamic_controls) by adding multiple elements, validating their presence, and then removing them to ensure proper functionality. Add multiple elements and validate their presence; then remove them and validate they are removed.
+     - **Hover Test**:
+       - Test the Hover functionality at [Hover Page](https://the-internet.herokuapp.com/hovers) by hovering over each image and ensuring the additional information is displayed correctly. over images on the Hover page and ensure additional information is displayed.
+
+2. **Write Valid Login Test**:
+
+   - Open `valid_login.spec.ts` in VS Code.
+   - Add the following test to validate successful login:
+     ```typescript
+     import { test, expect } from '@playwright/test';
+
+     test('Valid Login', async ({ page }) => {
          await page.goto('https://the-internet.herokuapp.com/login');
-         await page.pause();
          await page.fill('#username', 'tomsmith');
          await page.fill('#password', 'SuperSecretPassword!');
          await page.click('button[type="submit"]');
          await expect(page.locator('#flash')).toContainText('You logged into a secure area!');
      });
      ```
-   - When the test runs, use the Playwright inspector to confirm that the page is loading correctly, fields are being filled, and the button is clicked.
-   - Check if the success message element is present or if the locator `#flash` needs adjustment.
 
-2. **Run Tests in Debug Mode**:
+3. **Write Invalid Login Test**:
 
-   - Use the `--debug` flag to launch the Playwright Inspector:
+   - Open `invalid_login.spec.ts` in VS Code.
+   - Add the following test to validate error messages for invalid credentials:
+     ```typescript
+     import { test, expect } from '@playwright/test';
+
+     test('Invalid Login', async ({ page }) => {
+         await page.goto('https://the-internet.herokuapp.com/login');
+         await page.fill('#username', 'invalidUser');
+         await page.fill('#password', 'wrongPassword');
+         await page.click('button[type="submit"]');
+         await expect(page.locator('#flash')).toContainText('Your username is invalid!');
+     });
+     ```
+
+#### **Step 3: Writing Remaining Tests**
+
+1. **Write Additional Test Cases for Common Scenarios**:
+
+   - Using the provided links to [The Internet - Test Application](https://the-internet.herokuapp.com), create and implement the following tests:
+     - **Dropdown Interaction Test**:
+       - Validate the functionality of the dropdown menu.
+       - Example: Select `Option 1` and ensure the correct value displays.
+     - **Checkbox Selection Test**:
+       - Test checking and unchecking both checkboxes.
+       - Validate their states to ensure correct functionality.
+     - **Add/Remove Elements Test**:
+       - Add multiple elements and validate their presence.
+       - Remove elements and ensure proper functionality.
+     - **Hover Test**:
+       - Hover over images on the Hover page and validate that additional information is displayed.
+
+2. **Structure and Save Tests**:
+
+   - Store each test in its respective feature folder under `tests/` (e.g., `tests/dropdown`, `tests/checkbox`, etc.).
+   - Include descriptive comments explaining the purpose of each step.
+
+3. **Run and Validate All Tests**:
+
+   - Execute each test script individually to ensure they function as expected:
+     ```bash
+     npx playwright test tests/<folder>/<test_file>.spec.ts
+     ```
+
+#### **Step 4: Debugging and Refining**
+
+1. **Run Tests in Debug Mode**:
+   - Use the Playwright Inspector to debug your tests:
      ```bash
      npx playwright test --debug
      ```
-   - Step through each action in the test, observing behavior and identifying where it deviates from expectations.
-
-3. **Inspect Logs**:
-
-   - Review logs in the terminal to find specific errors or unhandled exceptions.
-
-#### **Reporting Test Results**
-
-1. **Capture Screenshots for Failures**:
-
-   - Add a screenshot command for failed tests:
+2. **Capture Screenshots for Failures**:
+   - Update your test to take screenshots for failing steps:
      ```typescript
-     await page.screenshot({ path: 'error-screenshot.png' });
+     if (!(await page.locator('#flash').isVisible())) {
+         await page.screenshot({ path: 'screenshots/error.png' });
+     }
      ```
-   - Save screenshots in a `screenshots/` folder for review.
+3. **Inspect Logs and Fix Issues**:
+   - Add `console.log` to track the execution of your tests.
+   - Use the trace viewer if needed to identify specific issues.
 
-2. **Log Observations**:
+#### **Step 5: Push Changes to GitHub**
 
-   - Use `console.log` to print intermediate steps or variable values for additional insights during test execution.
+1. **Stage and Commit Your Work via VS Code Source Control**:
 
-3. **Push Results to GitHub**:
+   - Open the **Source Control** tab in VS Code (icon with three branches or press `Ctrl + Shift + G` / `Cmd + Shift + G`).
+     - It is the branch icon on your left nav in VS Code.
+   - Enter a commit message in the text box (e.g., "Initial Playwright setup and default test execution").
+   - Click the **plus icon** to stage a single change or stage all changes.
+   - Click the **checkmark icon** or **Commit button** to commit your changes.
 
-   - Ensure all screenshots and debug files are committed to the repository for reference.
+2. **Push Your Changes via VS Code**:
 
----
+   - After committing, click the **Sync Changes button** in the Source Control tab.
+   - Verify that your changes are pushed to your GitHub repository.
 
-## **Assignment**
+3. **Stage, Commit, and Push via Command Line** (alternative):
 
-**Objective:**
-Write and execute Playwright tests on [The Internet](https://the-internet.herokuapp.com) to validate login functionality and dropdown interactions.
-
-**Instructions:**
-
-1. **Create and Write Tests:**
-   - Create a new test file named `test-site.spec.ts` in the `tests/` folder.
-   - Write two tests:
-     - Test 1: Validate successful and failed logins on the Login page.
-       - Use assertions to verify the success message "You logged into a secure area!" for valid credentials and the error message "Your username is invalid!" for invalid credentials.
-     - Test 2: Interact with the Dropdown page.
-       - Select options from the dropdown menu and use assertions to confirm that the selected option is displayed on the page.
-       - Example: Verify that selecting "Option 1" updates the dropdown value correctly.
-2. **Run the Tests:**
-   - Execute the tests using:
-     ```bash
-     npx playwright test
-     ```
-   - Debug failing tests using `--debug` or `page.pause()`.
-3. **Capture Results:**
-   - Take a screenshot of the terminal output for successful tests.
-   - Save screenshots for failed tests (if any) in a `screenshots/` folder.
-4. **Organize Your Test Scripts:**
-   - Use clear and descriptive test names for each test.
-   - Group related tests into logical blocks to make the script easier to read and maintain.
-   - Add comments explaining the purpose of each step in the test.
-5. **Push Changes to GitHub:**
-   - Add and commit your test scripts and screenshots:
+   - Use the following commands in the terminal:
      ```bash
      git add .
-     git commit -m "Added Playwright tests for login and dropdown"
+     git commit -m "Initial Playwright setup and default test execution"
      git push origin main
      ```
-6. **Submit Your Work:**
-   - Share your GitHub repository link in the QA Academy Slack channel.
 
----
+4. **Verify Changes**:
 
-## **Submission Instructions**
+   - Check your GitHub repository to ensure the new test file, screenshots, and updated README are visible.
 
-1. Submit the link to your GitHub repository in the QA Academy Slack channel.
-2. Ensure the repository includes:
-   - Test scripts.
-   - Screenshots of results.
-   - A README file summarizing the tests performed.
+#### **Step 6: Submit Deliverables**
+
+1. **Review Repository**:
+   - Ensure all test scripts and folders are properly structured.
+   - Verify that screenshots are saved in the appropriate folder.
+2. **Share Link**:
+   - Post your GitHub repository link in the QA Academy Slack channel for feedback.
 
 ---
 
 ## **Key Learning Outcomes**
 
-By the end of this training, students will:
-
-- Write and execute Playwright tests for basic web interactions.
-- Debug and troubleshoot failing tests.
-- Determine when to automate versus use manual testing.
+- Write structured and meaningful Playwright tests.
+- Organize test projects effectively.
+- Debug and troubleshoot Playwright tests using built-in tools.
+- Differentiate between test cases suitable for automation and those better suited for manual testing.
 
 ---
 
 ## **Key Interview Questions**
 
-1. How do you write a Playwright test to interact with UI elements?
-2. What are assertions, and why are they important in testing?
-3. When should you automate a test case versus performing it manually?
-4. How can you debug failing Playwright tests effectively?
+1. How do you structure test folders and files in a Playwright project?
+2. What are the best practices for writing Playwright tests?
+3. How do you debug a failing Playwright test?
+4. What types of test scenarios should not be automated?
 
 ---
 
 ## **Tips for Success**
 
-- Start simple: Focus on one functionality per test.
-- Use Playwright’s debugging tools to identify issues step-by-step.
-- Push changes to GitHub frequently to track your progress.
+- Focus on structuring tests for readability and maintainability.
+- Use comments to document the purpose of each test.
+- Test incrementally and debug often to identify issues early.
+- Regularly commit changes to GitHub for version control.
 
 ---
 
 ## **Next Training**
 
-In **Training 8**, students will consolidate skills by combining test case creation, performance testing, and exploratory testing into a comprehensive project.
+In **Training 7**, students will learn to create reusable test components, integrate test data files for dynamic testing, and configure basic cross-browser setups.
 
