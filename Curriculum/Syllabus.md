@@ -128,8 +128,6 @@ This six-month program provides comprehensive training in QA methodologies, tool
 
 #### **Weeks 3–4: UI Automation with Playwright**  
 **Topics Covered:**  
-- **Advanced Exploratory Testing:**
-  - Exploratory Testing: heuristics, edge case identification, and SBET documentation.
 - **Introduction to Playwright:**  
   - Overview of Playwright and its role in UI automation.  
   - Setting up Playwright in VS Code.
