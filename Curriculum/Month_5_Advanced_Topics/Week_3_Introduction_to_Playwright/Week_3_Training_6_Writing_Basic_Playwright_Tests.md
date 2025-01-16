@@ -277,7 +277,7 @@ Provide students with a structured approach to testing with Playwright. This tra
 
    - Write tests for the following scenarios using the [The Internet - Test Application](https://the-internet.herokuapp.com):
      - **Valid Login Test**:
-       - Test the Basic Auth functionality at [Basic Auth](https://the-internet.herokuapp.com/login) to validate proper credentials are required to access a secured page. Test successful login using valid credentials (`tomsmith` and `SuperSecretPassword!`).
+       - Test the Basic Auth functionality at [Login Page](https://the-internet.herokuapp.com/login) to validate proper credentials are required to access a secured page. Test successful login using valid credentials (`tomsmith` and `SuperSecretPassword!`).
      - **Invalid Login Test**:
        - Test invalid login attempts at [Login Page](https://the-internet.herokuapp.com/login) by entering incorrect username and password combinations to ensure proper error messages are displayed. Test invalid login by entering incorrect username and password combinations.
      - **Dropdown Interaction Test**:
@@ -286,7 +286,7 @@ Provide students with a structured approach to testing with Playwright. This tra
      - **Checkbox Selection Test**:
        - Test the Checkbox functionality at [Checkbox Page](https://the-internet.herokuapp.com/checkboxes) by selecting and unselecting each checkbox and validating their states. Test checking and unchecking both checkboxes and validate their state.
      - **Add/Remove Elements Test**:
-       - Test the Add/Remove Elements functionality at [Dynamic Controls Page](https://the-internet.herokuapp.com/dynamic_controls) by adding multiple elements, validating their presence, and then removing them to ensure proper functionality. Add multiple elements and validate their presence; then remove them and validate they are removed.
+       - Test the Add/Remove Elements functionality at [Dynamic Controls Page](https://the-internet.herokuapp.com/dynamic_controls) by adding an element, validating their presence, and then removing them to ensure proper functionality. Add additional tests for enable/disabling elements and validate their presence.
      - **Hover Test**:
        - Test the Hover functionality at [Hover Page](https://the-internet.herokuapp.com/hovers) by hovering over each image and ensuring the additional information is displayed correctly. over images on the Hover page and ensure additional information is displayed.
 
@@ -334,8 +334,8 @@ Provide students with a structured approach to testing with Playwright. This tra
        - Test checking and unchecking both checkboxes.
        - Validate their states to ensure correct functionality.
      - **Add/Remove Elements Test**:
-       - Add multiple elements and validate their presence.
-       - Remove elements and ensure proper functionality.
+       - Add an element and validate their presence.Remove element and ensure proper functionality.
+       - Enable an element and validate proper functionality.Disable element and ensure functionality.
      - **Hover Test**:
        - Hover over images on the Hover page and validate that additional information is displayed.
 
